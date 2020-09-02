@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.trans-mains {
+    padding-right: 344px;
+    position: relative;   
+    padding-left: 116px;
+}
+.right-aside {
+    width: 254px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .two-color {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 14px;
+    }
+}
+
+.serach-box-wrapper {
+    margin-bottom: 40px;
+}

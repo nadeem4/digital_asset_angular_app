@@ -1,0 +1,83 @@
+<div class="table-data tokenization-table" *ngIf="dataList">
+    <div class="row-th">
+        <div class="col-td width4">
+        </div>
+        <div class="col-th width13">
+            <div class="spacing">Transaction Id</div>
+        </div>
+        <div class="col-th width13">
+            <div class="spacing">Timestamp</div>
+        </div>
+        <div class="col-th width13">
+            <div class="spacing ">Sender</div>
+        </div>
+        <div class="col-th width13">
+            <div class="spacing ">Receiver</div>
+        </div>
+        <div class="col-th width13">
+            <div class="spacing ">Amount</div>
+        </div>
+        <div class="col-th width13">
+            <div class="spacing ">Last Update</div>
+        </div>
+        <div class="col-th width13">
+            <div class="spacing ">Priority</div>
+        </div>
+        <div class="col-td width4">
+        </div>
+
+    </div>
+    <ng-container *ngFor="let item of dataList;let i = index">
+        <div class="row-td" *ngIf="i < pageData.pagePerNumber">
+            <div class="col-td width4">
+                <i class="icons icon-gray"></i>
+            </div>
+            <div class="col-td width13">
+                <div class="color-block" [class.yellow]="item.status === 'Pending'"
+                    [class.red]="item.status === 'Cancelled'" [class.gray]="item.status === 'In Progress'">
+                    {{item.status}}
+                </div>
+                <div class="spacing">
+                    {{item.transactionId}}
+                </div>
+            </div>
+            <div class="col-td width13 gray-txt">
+                <div class="spacing ">{{item.timestamp.date}}</div>
+                <div class="spacing sub-txt">{{item.timestamp.time}}</div>
+            </div>
+            <div class="col-td width13  bold">
+                <div class="spacing ">{{item.sender.name}}</div>
+                <div class="spacing sub-txt">{{item.sender.accNumber}}</div>
+            </div>
+            <div class="col-td width13 bold">
+                <div class="spacing">{{item.receiver.name}}</div>
+                <div class="spacing sub-txt">{{item.receiver.accNumber}}</div>
+                <!-- <div class="color-block" [class.yellow]="item.overdue === 12" [class.red]="item.overdue > 24">
+                    <ng-container *ngIf="item.overdue  == 12">
+                        Overdue in 12h
+                    </ng-container>
+                    <ng-container *ngIf="item.overdue  > 24">
+                        OVERDUE
+                    </ng-container>
+                </div> -->
+            </div>
+            <div class="col-td width13 bold">
+                <div class="spacing ">${{item.amount}}</div>
+            </div>
+            <div class="col-td width13  gray-txt">
+                <div class="spacing ">{{item.lastUpdated.date}}</div>
+                <div class="spacing sub-txt">{{item.timestamp.time}}</div>
+            </div>
+            <div class="col-td width13 bold">
+                <div class="spacing " [class.red]="item.priority === 'High'" [class.yellow]="item.priority === 'Medium'"
+                    [class.gray]="item.priority === 'Low'">{{item.priority}}</div>
+            </div>
+            <div class="col-td width4">
+                <i class=" icons icon-elipsis"></i>
+            </div>
+        </div>
+    </ng-container>
+</div>
+
+<app-sd-pagination [pageData]="pageData" (changePagination)="changePagination.emit($event)">
+</app-sd-pagination>

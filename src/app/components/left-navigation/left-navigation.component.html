@@ -1,0 +1,63 @@
+<div class="open-wrap" [class.open-left]="openMenu">
+  <div class="left-nav ">
+    <div class="top-menu">
+      <div class="open-show">
+        <div class="lefts">
+          <img src="assets/i/dig-logo@2x.png" alt="logo" />
+        </div>
+        <div class="rights">
+          <a href="javascript:;" class="icons icon-back" (click)="openMenu = false">
+          </a>
+        </div>
+      </div>
+      <a href="javascript:;" class="icons icon-menu" (click)="openMenu = true">
+      </a>
+    </div>
+    <div class="add-wrap" *ngIf="role === 'Central Bank Operations User'">
+      <a href="javascript:;" class="green-btn">+</a>
+    </div>
+    <div class="tab-links">
+      <ul>
+        <li *ngIf="showDashboard()">
+          <a [routerLink]="['/dashboard-bank-treasury-page']" class="icons icon-dashboard "
+            [class.current]="activeMenu === 'Dashboard'" (click)="activeMenu = 'Dashboard'">
+            <span class="detail-txt">Dashboard</span>
+          </a>
+        </li>
+        <li *ngIf="showTokenization()">
+          <a [routerLink]="['/request-history-page']" class="icons icon-change"
+            [class.current]="activeMenu === 'Tokenizations'" (click)="activeMenu = 'Tokenizations'">
+            <span class="detail-txt">Tokenizations</span>
+          </a>
+        </li>
+        <li *ngIf="showJournalEntries()">
+          <a href="javascript:;" class="icons icon-back-time">
+            <span class="detail-txt">Journal Entries</span>
+          </a>
+        </li>
+        <li *ngIf="showPaymentRequest()">
+          <a  class="icons icon-payment" [routerLink]="['/payment-request-list']">
+            <span class="detail-txt">Payment Request</span>
+          </a>
+        </li>
+        <li *ngIf="showQueueMonitoring()">
+          <a href="javascript:;" class="icons icon-queues" [routerLink]="['/payment-queue-monitoring']">
+            <span class="detail-txt">Queues Monitoring</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="icons icon-question">
+            <span class="detail-txt">FAQs</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+    <div class="bottom-setting">
+      <a href="javascript:;" class="icons icon-setting ">
+        <span class="detail-txt">Settings</span>
+      </a>
+    </div>
+  </div>
+</div>

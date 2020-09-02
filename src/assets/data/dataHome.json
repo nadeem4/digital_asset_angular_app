@@ -1,0 +1,23 @@
+{
+  "bannerPhotoUrl": "assets/i/icon-banner-bg@2x.jpg",
+  "title": "What We Offer",
+  "description": "Blockchain and Distributed Ledger Technology (DLT) is changing the way we live and work. We, at Wipro, help customers use this technology to drive transformations into the future. With our Digital Asset platform, we bring DLT value proposition to banking and financial services clients with our targeted offerings.",
+  "whatWeOfferData": {
+    "paymentsAndAccounting": {
+      "title": "Payments and Accounting",
+      "content": "Platform for a faster, more efficient and cryptographically secure payments between customers and financial institutions. Be it domestic, cross border or wallet payments."
+    },
+    "centralBankDigitalCurrency": {
+      "title": "Central Bank Digital Currency",
+      "content": "The demand for a ubiquitous money has forced central banks to think of a money revolution; and today, this revolution is being powered by distributed ledger technology."
+    },
+    "securityTokenOfferings": {
+      "title": "Security Token Offerings",
+      "content": "Platform allows clients to tokenize complex financial instruments, trade them in secondary markets and manage their complete lifecycle on a decentralized network, powered by distributed ledger technology."
+    },
+    "getStarted": {
+      "title": "Get Started",
+      "content": "Blockchain empowers businesses to re-imagine how financial transactions are processed, from payments to post-trade processing. Sign up now to experience all the services offered!"
+    }
+  }
+}

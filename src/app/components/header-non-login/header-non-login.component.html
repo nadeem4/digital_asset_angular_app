@@ -1,0 +1,45 @@
+<header class="header flex-grid">
+	<div class="lefts flex">
+		<div class="logo-area flex">
+			<a href="javascript:;" class="btn-logo wipro-logo">
+				<img src="assets/i/wipro-logo@2x.png" alt="img" />
+			</a>
+			<div class="line"></div>
+			<a [routerLink]="['/home-page']" class="btn-logo dig-logo">
+				<img src="assets/i/dig-black-logo@2x.png" alt="img" />
+			</a>
+		</div>
+		<div class="header-nav">
+			<ul class="flex">
+				<li>
+					<a href="javascript:;" class="tab-items"
+					  [class.current]="activeMenu === 'Payments and Accounting'"
+                      (click)="activeMenu = 'Payments and Accounting'">
+						Payments and Accounting
+					</a>
+				</li>
+				<li>
+					<a [routerLink]="['/cbdc-page']" class="tab-items"
+					  [class.current]="activeMenu === 'Central Bank Digital Currency'"
+                      (click)="activeMenu = 'Central Bank Digital Currency'">
+						Central Bank Digital Currency
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="tab-items"
+					  [class.current]="activeMenu === 'Security Token Offerings'"
+                      (click)="activeMenu = 'Security Token Offerings'">
+						Security Token Offerings 
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--end .header-nav-->
+	</div>
+	<div class="right-btns flex">
+		<a href="javascript:;" class="btn btn-blue">Sign Up</a>
+		<a [routerLink]="['/login-page']" class="btn btn-gray">Login</a>
+	</div>
+	<!--end .right-users-->
+</header>
+<!-- end .header -->

@@ -1,0 +1,49 @@
+<div class="white-panel"
+  *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-entries"></i>
+      <span class="txt">
+        Recent Journal Entries
+      </span>
+    </div>
+    <div class="rights">
+      <a href="javascript:;" class="blue-link">View all</a>
+    </div>
+  </div>
+  <div class="table-data recent-table">
+    <div class="row-th">
+      <div class="col-th width24">
+        <div class="spacing">Date</div>
+      </div>
+      <div class="col-th width20">
+        <div class="spacing">Description</div>
+      </div>
+      <div class="col-th width28">
+        <div class="spacing txt-right">Debit</div>
+      </div>
+      <div class="col-th width28">
+        <div class="spacing txt-right">Credit</div>
+      </div>
+    </div>
+    <div class="table-body">
+      <div class="row-td"
+        *ngFor="let item of dataList.tableData;let i = index">
+        <div class="col-td width24">
+          <div class="spacing">{{item.date}}</div>
+        </div>
+         <div class="col-td width20">
+           <div class="spacing">{{item.description}}</div>
+         </div>
+         <div class="col-td width28">
+           <div class="spacing txt-right">{{item.debit}}</div>
+         </div>
+         <div class="col-td width28">
+           <div class="spacing txt-right">{{item.credit}}</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <!--end .table-data-->
+</div>
+<!--end .white-panel-->

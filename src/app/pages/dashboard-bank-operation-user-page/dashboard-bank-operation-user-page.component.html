@@ -1,0 +1,49 @@
+<app-sd-header-login [title]="'Dashboard'" [showSearch]="true">
+</app-sd-header-login>
+
+<app-sd-left-navigation [activeMenu]="'Dashboard'">
+</app-sd-left-navigation>
+
+<div class="content">
+    <div class="row dashboard-page" *ngIf="data$|async">
+        <div class="col col-md-3 col-sm-12">
+            <app-sd-dashboard-weather [showInfo]="false" [dataList]="(data$|async)?.data.weatherData">
+            </app-sd-dashboard-weather>
+            <app-sd-dashboard-recent-request [dataList]="(data$|async)?.data.recentRequestData">
+            </app-sd-dashboard-recent-request>
+        </div>
+
+        <div class="col col-md-6 col-sm-12">
+            <div class="row">
+                <div class="col col-md-6 col-sm-12">
+                    <app-sd-dashboard-request-progress [dataList]="(data$|async)?.data.requestProgressData">
+                    </app-sd-dashboard-request-progress>
+                </div>
+                <div class="col col-md-6 col-sm-12">
+                    <app-sd-dashboard-queue-summary [title]="'Queue Summary'"
+                        [dataList]="(data$|async)?.data.queueSummary" [rightLegendForDonought]="rightLegendForDonought"
+                        [bottomLegendForDonought]="bottomLegendForDonought" [rowWiseLegendForDonought]="rowWiseLegendForDonought"
+                        [columnWiseLegendForDonought]="columnWiseLegendForDonought">
+                    </app-sd-dashboard-queue-summary>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-md-12 col-sm-12">
+                    <app-sd-dashboard-payment-request-summary [dataList]="(data$|async)?.data.paymentRequestSummaryData"
+                        (changePeriod)="changePeriod($event)">
+                    </app-sd-dashboard-payment-request-summary>
+                </div>
+            </div>
+        </div>
+        <!--end .col-->
+        <div class="col col-md-3 col-sm-12">
+            <app-sd-dashboard-payments [heading]="'Paymnet Queue'" [dataList]="(data$|async)?.data.paymentsData">
+            </app-sd-dashboard-payments>
+        </div>
+    </div>
+</div>
+<!-- end .content -->
+
+<app-sd-modal-windows-request-sent [modalData]="modalData">
+</app-sd-modal-windows-request-sent>

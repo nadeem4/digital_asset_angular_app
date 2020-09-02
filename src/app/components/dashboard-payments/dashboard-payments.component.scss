@@ -1,0 +1,96 @@
+@import '../../../styles/variables';
+
+//.payments-module
+.payments-module {
+    //.list-payments
+    .list-payments {
+        margin-top: 30px;
+        li {
+            margin-bottom: 19px;
+            display: flex;
+            justify-content: space-between;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .lefts {
+            padding-left: 20px;
+            position: relative;
+            .icon-pyaments-list {
+                background: url(/assets/i/gray-payments.svg) center center no-repeat;
+                background-size: 20px 20px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 2px;
+                &.right-top {
+                    background: url(/assets/i/right-gray.svg) center center no-repeat;
+                }
+            }
+            .txt-area {
+                margin-left: 12px;
+                .color-block {
+                    line-height: 13px;
+                    border-radius: 9px;
+                    background-color: #ffda29;
+                    padding: 0px 6px;
+                    text-align: center;
+                    color: #646363;
+                    display: inline-block;
+                    font-size: 9px;
+                    font-weight: 700;
+                    line-height: 13px;
+                    margin: 3px;
+                    text-transform: uppercase;
+                    &.yellow {
+                        background-color: #ffda29;
+                    }
+                    &.gray {
+                        background-color: #84929c;
+                        color: #fff;
+                    }
+                    &.red {
+                        background-color: #ef3341;
+                        color: #fff;
+                    }
+                    &.green {
+                        background-color: #6dc24b;
+                        color: #fff;
+                    }
+                }
+                .id-txt {
+                    color: #0e3570;
+                    font-size: 13px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .rights {
+            padding-top: 5px;
+            text-align: right;
+            .price {
+                color: #000000;
+                font-size: 13px;
+                line-height: 14px;
+                margin-bottom: 4px;
+            }
+            .color-txt {
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 13px;
+                text-transform: uppercase;
+                &.red {
+                    color: #ed1c24;
+                }
+                &.gray {
+                    color: #84929c;
+                }
+                &.yellow {
+                    color: #fdb913;
+                }
+            }
+        }
+    }
+}

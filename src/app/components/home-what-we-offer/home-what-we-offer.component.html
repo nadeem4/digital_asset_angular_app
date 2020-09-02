@@ -1,0 +1,58 @@
+<div class="we-offer-content"
+  *ngIf="dataList">
+	<div class="max-946">
+		<div class="blue-title">
+			{{dataList.title}}
+		</div>
+		<p class="txt">
+			{{dataList.description}}
+		</p>
+		<div class="four-list flex"
+		  *ngIf="dataList.whatWeOfferData">
+			<a [routerLink]="['/login-page']" class="color-circle green"
+			  [class.current]="activeIndex === 0"
+			  (mouseover)="activeIndex = 0">
+				<div class="line-txt">
+					{{dataList.whatWeOfferData.paymentsAndAccounting.title}}
+				</div>
+				<p class="detail-txt">
+					{{dataList.whatWeOfferData.paymentsAndAccounting.content}}
+				</p>
+			</a>
+			<a [routerLink]="['/login-page']" class="color-circle light-blue"
+			  [class.current]="activeIndex === 1"
+			  (mouseover)="activeIndex = 1">
+				<div class="line-txt">
+					{{dataList.whatWeOfferData.centralBankDigitalCurrency.title}}
+				</div>
+				<p class="detail-txt">
+					{{dataList.whatWeOfferData.centralBankDigitalCurrency.content}}
+				</p>
+			</a>
+			<a [routerLink]="['/login-page']" class="color-circle blue"
+			  [class.current]="activeIndex === 2"
+			  (mouseover)="activeIndex = 2">
+				<div class="line-txt">
+					{{dataList.whatWeOfferData.securityTokenOfferings.title}}
+				</div>
+				<p class="detail-txt">
+					{{dataList.whatWeOfferData.securityTokenOfferings.content}}
+				</p>
+			</a>
+			<a [routerLink]="['/login-page']" class="color-circle orange"
+			  [class.current]="activeIndex === 3"
+			  (mouseover)="activeIndex = 3">
+				<div class="line-txt">
+					{{dataList.whatWeOfferData.getStarted.title}}
+				</div>
+				<p class="detail-txt">
+					{{dataList.whatWeOfferData.getStarted.content}}
+					<a href="javascript:;" class="btn btn-gray"
+					  (click)="$event.stopPropagation();">
+					  Sign Up
+					</a>
+				</p>
+			</a>
+		</div>
+	</div>
+</div>

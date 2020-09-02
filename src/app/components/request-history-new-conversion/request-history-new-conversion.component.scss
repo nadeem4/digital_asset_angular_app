@@ -1,0 +1,107 @@
+@import '../../../styles/variables';
+.two-color {
+    flex-direction: column;
+    border: 1px solid black;
+}
+.color-items {
+    width: 100%;
+    margin: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    min-height: 130px;
+    .little-txt {
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .icon-cash {
+        background-size: 24px 17px;
+    }
+    .icon-cbdc {
+        background-size: 22px 23px;
+    }
+    .icons {
+        margin-right: 8px;
+        margin-top: 0;
+    }
+    .right-txt {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+.request-progress-module {
+    margin-top: 14px;
+    padding: 0;
+    min-height: 326px;
+    .top-bar {
+        padding: 22px 17px 0 17px;
+        margin-bottom: 0;
+    }
+    ::ng-deep {
+        .token-form-area {
+            display: block;
+            margin: 0;
+            border-top: 0;
+            .items {
+                &.flex1 {
+                    max-width: 135px;
+                }
+                &.flex2 {
+                    margin-top: 29px;
+                    .top-label {
+                        display: none!important;
+                    }
+                    .input-module {
+                        position: relative;
+                        padding-top: 20px;
+                        &.input-status {
+                            .label-txt {
+                                display: block!important;
+                                top: 0;
+                                left: 0;
+                                color: #585858;
+                                font-family: Arial;
+                                font-size: 12px;
+                            }
+                            .inputs {
+                                background-color: transparent;
+                            }
+                        }
+                        .label-txt {
+                            position: absolute;
+                            top: 27px;
+                            z-index: 99;
+                            color: #585858;
+                            font-family: Arial;
+                            font-size: 14px;
+                            display: none;
+                        }
+                        .inputs {
+                            border: 0!important;
+                            border-bottom: 1px solid #b2b2b2!important;
+                            padding-left: 0;
+                        }
+                        .right-txt {
+                            right: 0;
+                        }
+                    }
+                }
+                &.flex3 {
+                    text-align: left;
+                    .btn-blue {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }  
+        .tooken-txt {
+            color: #84929c;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+    }
+}

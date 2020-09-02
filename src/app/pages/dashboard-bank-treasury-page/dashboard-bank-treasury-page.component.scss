@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+.content {
+	padding-bottom: 50px;
+	padding-top: 84px;
+}
+
+.w292 {
+    flex: 0 0 250px;
+    max-width: 250px;
+}
+.dashboard-page {
+    &.row {
+        margin: 0 -12px;
+        .col {
+            padding: 0 12px;
+        }
+    }
+}
+
+::ng-deep {
+    //.white-panel
+    .white-panel {
+        margin-bottom: 24px;
+        padding: 16px 20px 16px 20px;
+        .top-bar {
+            margin-bottom: 20px;
+            .rights {
+                .blue {
+                    color: #0e3570;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: 1148px) {
+	::ng-deep {
+	    .token-form-area {
+	        .items {
+	            &.flex2 {
+	                flex: 0 0 100%;
+	            }
+	        }
+	    }
+	}
+}

@@ -1,0 +1,54 @@
+<div class="login-box">
+  <div class="logo-yellow">
+    <div class="logo-txt">Digital Asset</div>
+  </div>
+  <div class="title">Login</div>
+  <p class="txt">Please enter your account credentials</p>
+  <div>
+    <div class="input-group mb-17"
+      [class.input-status]="emailId !== ''">
+      <label class="label-txt">Email ID</label>
+      <div class="inputs"
+        [class.error]="!checkMail(emailId)">
+        <input type="text" placeholder="Email ID"
+          [(ngModel)]="emailId">
+      </div>
+      <div class="error-txt"
+        *ngIf="!checkMail(emailId)">
+        Invalid email address
+      </div>
+    </div>
+    <!-- end .input-group -->
+    <div class="input-group"
+      [class.input-status]="password !== ''">
+      <label class="label-txt">Password</label>
+      <div class="inputs">
+        <input type="password" placeholder="Password"
+          [(ngModel)]="password">
+      </div>
+      <div class="error-txt"
+	      *ngIf="showLoginError">
+	      Wrong credentials
+	    </div>
+    </div>
+    <!-- end .input-group -->
+    
+    <a href="javascript:;" class="btn-submit"
+      [class.disabled]="emailId === '' || password === '' || !checkMail(emailId)"
+      (click)="clickLogin()">
+      Login
+    </a>
+    <div class="flex-grid mb-192">
+      <div class="checkbox-wrap">
+        <input type="checkbox" id="check-remember-me" value="remamber" />
+        <label for="check-remember-me">Remember Me</label>
+      </div>
+      <div class="line"></div>
+      <a href="javascript:;" class="for-link">Forgot Password</a>
+    </div>
+    <div class="copy">
+      Don't have an account? <a href="javascript:;" class="con-link">Register</a>
+    </div>
+  </div>
+</div>
+<!-- end .login-box -->

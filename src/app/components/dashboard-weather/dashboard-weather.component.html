@@ -1,0 +1,30 @@
+<div class="days-panel blue-bg"
+  *ngIf="dataList">
+  <i class="icons sun-img"></i>
+  <div class="top-area">
+    Good morning, <span class="bold">{{dataList.user}}!</span>
+  </div>
+  <div class="templete">
+    <div class="num">
+      {{dataList.temp}}<span class="o-txt"></span>
+    </div>
+    <div class="days">
+      <i class="icons icon-sun"></i>
+      <span class="txt">{{dataList.weather}}</span>
+    </div>
+  </div>
+  <div class="bottom-area"
+    *ngIf="showInfo">
+    <div class="line-txt blue"
+      [class.blue]="!dataList.hasError"
+      [class.red]="dataList.hasError">
+      <div class="txt">{{dataList.time}}</div>
+      <div
+        [class.txt]="!dataList.hasError"
+        [class.red-bg]="dataList.hasError">
+        {{dataList.tips}}
+      </div>
+    </div>
+  </div>
+</div>
+<!--end .days-panel-->

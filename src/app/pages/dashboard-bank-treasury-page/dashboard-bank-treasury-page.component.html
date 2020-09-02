@@ -1,0 +1,59 @@
+<app-sd-header-login
+  [title]="'Dashboard'"
+  [showSearch]="true">
+</app-sd-header-login>
+
+<app-sd-left-navigation
+  [activeMenu]="'Dashboard'">
+</app-sd-left-navigation>
+
+<div class="content">
+  <div class="row dashboard-page"
+    *ngIf="data$|async">
+    <div class="col col-md-3 col-sm-12">
+      <app-sd-dashboard-weather
+        [showInfo]="false"
+        [dataList]="(data$|async)?.data.weatherData">
+      </app-sd-dashboard-weather>
+      
+      <app-sd-dashboard-request-progress
+        [dataList]="(data$|async)?.data.requestProgressData">
+      </app-sd-dashboard-request-progress>
+
+      <app-sd-dashboard-recent-request
+        [dataList]="(data$|async)?.data.recentRequestData">
+      </app-sd-dashboard-recent-request>
+    </div>
+    <div class="col col-md-6 col-sm-12">
+      <app-sd-dashboard-account-summary
+        [dataList]="(data$|async)?.data.accountSummaryData"
+        (postChange)="postChange($event)">
+      </app-sd-dashboard-account-summary>
+
+      <app-sd-dashboard-recent-journal-entries
+        [dataList]="(data$|async)?.data.recentJournalEntriesData">
+      </app-sd-dashboard-recent-journal-entries>
+
+      <app-sd-dashboard-payment-request-summary
+        [dataList]="(data$|async)?.data.paymentRequestSummaryData"
+        (changePeriod)="changePeriod($event)">
+      </app-sd-dashboard-payment-request-summary>
+    </div>
+    <!--end .col-->
+    <div class="col col-md-3 col-sm-12">
+      <app-sd-dashboard-queue-summary
+        [title]="'Queue Summary'"
+        [dataList]="(data$|async)?.data.queueSummary">
+      </app-sd-dashboard-queue-summary>
+      
+      <app-sd-dashboard-payments
+        [dataList]="(data$|async)?.data.paymentsData">
+      </app-sd-dashboard-payments>
+    </div>
+  </div>
+</div>
+<!-- end .content -->
+
+<app-sd-modal-windows-request-sent
+  [modalData]="modalData">
+</app-sd-modal-windows-request-sent>

@@ -1,0 +1,46 @@
+<div class="pages flex-grid">
+  <div class="lefts">
+    <a href="javascript:;" class="icons btn-prev"></a>
+    <span class="gray-txt">Show:</span>
+    <div class="drop-page">
+      <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" ngbDropdownToggle>
+        {{pageData.pagePerNumber}} per page
+      </button>
+      <div ngbDropdownMenu >
+        <button ngbDropdownItem
+          (click)="pageData.pagePerNumber = 10;changePagination.emit(pageData)">
+          10 per page
+        </button>
+        <button ngbDropdownItem
+          (click)="pageData.pagePerNumber = 20;changePagination.emit(pageData)">
+          20 per page
+        </button>
+        <button ngbDropdownItem
+          (click)="pageData.pagePerNumber = 50;changePagination.emit(pageData)">
+          50 per page
+        </button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="rights-li">
+    <a href="javascript:;" class="icons btn-prev"
+      [class.disabled]="(pageData.pageIndex === 0) || (getPages().length === 0)"
+      (click)="clickPrev()">
+    </a>
+    <ul>
+      <li *ngFor="let item of getPages();let i = index">
+        <a href="javascript:;" class="btn-page"
+          [class.active]="pageData.pageIndex === item"
+          (click)="clickPageLink(item)">
+          {{item + 1}}
+        </a>
+      </li>
+    </ul>
+    <a href="javascript:;" class="icons btn-next"
+      [class.disabled]="(pageData.pageIndex === pageData.totalPage - 1) || (getPages().length === 0)"
+      (click)="clickNext()">
+    </a>
+  </div>
+</div>

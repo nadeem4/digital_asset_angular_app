@@ -1,0 +1,49 @@
+<div class="table-data tokenization-table"
+  *ngIf="dataList">
+  <div class="row-th">
+    <div class="col-th width26">
+      <div class="spacing">Request ID</div>
+    </div>
+    <div class="col-th width37">
+      <div class="spacing">Timestamp</div>
+    </div>
+    <div class="col-th width37">
+      <div class="spacing ">Amount</div>
+    </div>
+  </div>
+  <ng-container
+    *ngFor="let item of dataList;let i = index">
+    <div class="row-td"
+      *ngIf="i < pageData.pagePerNumber"
+      [class.blue-line]="item.type === 'cashToken'"
+      [class.yellow-line]="item.type === 'tokenCash'">
+      <div class="col-td width26">
+        <div class="spacing">
+          <a href="javascript:;" class="links">
+            {{item.requestID}}
+          </a>
+          <div class="gray-txt">
+            {{item.type === 'cashToken' ? 'Cash' : 'Token'}}
+            <i class="icons icon-right-arrow"></i>
+            {{item.type === 'cashToken' ? 'Token' : 'Cash'}}
+          </div>
+        </div>
+      </div>
+       <div class="col-td width37">
+         <div class="spacing">
+           <div class="times">
+             {{item.timestamp}}
+           </div>
+         </div>
+       </div>
+       <div class="col-td width37">
+         <div class="spacing ">{{item.amount}}</div>
+       </div>
+    </div>
+  </ng-container>
+</div>
+
+<app-sd-pagination
+  [pageData]="pageData"
+  (changePagination)="changePagination.emit($event)">
+</app-sd-pagination>

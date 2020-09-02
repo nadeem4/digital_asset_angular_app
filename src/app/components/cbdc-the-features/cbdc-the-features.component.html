@@ -1,0 +1,47 @@
+<div class="gray-bg">
+	<div class="features-box"
+	  *ngIf="dataList">
+		<div class="blue-title">
+			{{dataList.featuresTitle}}
+		</div>
+		<div class="items">
+			<div class="img-area mr80">
+				<img src="assets/i/new-conver-show@2x.jpg" alt="img" />
+			</div>
+			<div class="txt-area">
+				<div class="bold-title">
+					{{dataList.cashTitle}}
+				</div>
+				<p class="txt">
+					{{dataList.cashDescription}}
+				</p>
+			</div>
+		</div>
+		<div class="items">
+			<div class="txt-area">
+				<div class="bold-title">
+					{{dataList.smartTitle}}
+				</div>
+				<p class="txt">
+					{{dataList.smartDescription}}
+				</p>
+			</div>
+			<div class="img-area ml80">
+				<img src="assets/i/request-show@2x.jpg" alt="img" />
+			</div>
+		</div>
+		<div class="items">
+			<div class="img-area mr80">
+				<img src="assets/i/payments-show@2x.jpg" alt="img" />
+			</div>
+			<div class="txt-area">
+				<div class="bold-title">
+					Monitor Payment Queues{{dataList.monitorTitle}}
+				</div>
+				<p class="txt">
+					{{dataList.monitorDescription}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,61 @@
+<div class="token-top-nav flex-grid"
+  *ngIf="dataList">
+  <ul class="nav-list flex">
+    <li>
+      <a href="javascript:;" class="tab-links"
+        [class.current]="activeTab === 'All'"
+        (click)="activeTab = 'All';changeTabs.emit(activeTab)">
+        <span class="txt">All</span>
+        <span class="num dark-blue">{{dataList.allNumber}}</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" class="tab-links"
+        [class.current]="activeTab === 'Tokenization'"
+        (click)="activeTab = 'Tokenization';changeTabs.emit(activeTab)">
+        <span class="txt">Tokenization</span>
+        <span class="num blue">{{dataList.tokenizationNumber}}</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" class="tab-links"
+        [class.current]="activeTab === 'De-tokenization'"
+        (click)="activeTab = 'De-tokenization';changeTabs.emit(activeTab)">
+        <span class="txt">De-tokenization</span>
+        <span class="num green">{{dataList.deTokenizationNumber}}</span>
+      </a>
+    </li>
+  </ul>
+  <div class="calender-box flex">
+    <div class="items flex-grid">
+      <div class="left-area">
+        <div class="top-txt">
+          From
+        </div>
+        <div class="date">
+          <input class="form-control" readonly
+            name="dp" [(ngModel)]="modelFrom" ngbDatepicker #from="ngbDatepicker"
+            (dateSelect)="changeDates.emit({from: modelFrom, to: modelTo})">
+        </div>
+      </div>
+      <a href="javascript:;" class="icons canlender"
+        (click)="from.toggle()">
+      </a>
+    </div>
+    <div class="items flex-grid">
+      <div class="left-area">
+        <div class="top-txt">
+          To
+        </div>
+        <div class="date">
+          <input class="form-control" readonly
+            name="dp" [(ngModel)]="modelTo" ngbDatepicker #to="ngbDatepicker"
+            (dateSelect)="changeDates.emit({from: modelFrom, to: modelTo})">
+        </div>
+      </div>
+      <a href="javascript:;" class="icons canlender"
+        (click)="to.toggle()">
+      </a>
+    </div>
+  </div>
+</div>

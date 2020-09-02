@@ -1,0 +1,13 @@
+<div class="login-pages flex-box">
+  <div class="w-1175">
+  	<div class="bg-cover"></div>
+    <app-sd-login-banner>
+    </app-sd-login-banner>
+  </div>
+  <!-- end .w-1175 -->
+  <app-sd-login-form
+    [dataList]="(data$|async)?.data"
+    (loginSuccess)="loginSuccess($event)">
+  </app-sd-login-form>
+</div>
+<!--end .login-pages-->

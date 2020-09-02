@@ -1,0 +1,72 @@
+<div class="token-form-area">
+  <div class="items flex1">
+    <div class="top-label">
+      <div class="txt">From</div>
+      <div class="txt">To</div>
+    </div>
+    <div class="choose-border">
+      <span class="txt blue"
+        *ngIf="changeType === 'cashToken'">
+        Cash
+      </span>
+      <span class="txt green">
+        Token
+      </span>
+      <span class="txt blue"
+        *ngIf="changeType === 'tokenCash'">
+        Cash
+      </span>
+      <a href="javascript:;" class="icons icon-change"
+        (click)="changeType = (changeType === 'cashToken' ? 'tokenCash' : 'cashToken')">
+      </a>
+    </div>
+  </div>
+  <div class="items flex2">
+    <div class="top-label">
+      <div class="txt">Amount</div>
+    </div>
+    <div class="input-module"
+      [class.error]="showError() || !isNumber() || !isMultiple10()"
+      [class.input-status]="amountValue !== ''">
+      <div class="label-txt">Amount</div>
+      <div class="inputs">
+        <input type="text" placeholder="Amount"
+          [(ngModel)]="amountValue"/>
+        <div class="right-txt">
+          {{changeType === 'cashToken' ? 'USD' : 'Token'}}
+        </div>
+      </div>
+      <div class="bottom-txt">
+        <div class="normal-txt">
+          {{changeType === 'cashToken' ?
+            'Must be lower than the available cash balance.'
+            :
+            'Must be lesser than or equal to the cash token balance.'
+          }}
+        </div>
+        <div class="error-txt"
+          *ngIf="!isNumber()">
+          Enter only integer value.
+        </div>
+        <div class="error-txt"
+          *ngIf="isNumber() && !isMultiple10()">
+          Cash need to be in multiple of 10.
+        </div>
+        <div class="error-txt"
+          *ngIf="showError()">
+          You don't have enough funds to make this conversion.  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="items flex3">
+    <a href="javascript:;" class="btn btn-blue"
+      [class.disabled]="showError() || (amountValue.trim() === '' || amountValue.trim() === '0' || !isNumber() || !isMultiple10())"
+      (click)="clickButton()">
+      {{changeType === 'cashToken' ? 'Tokenize' : 'De-Tokenize'}}
+    </a>
+    <div class="tooken-txt">
+      {{changeType === 'cashToken' ? '10 USD = 1 token' : '1 token = 10 USD'}}
+    </div>
+  </div>
+</div>

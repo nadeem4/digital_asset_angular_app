@@ -1,0 +1,509 @@
+{
+  "weatherData": {
+    "user": "Bill",
+    "temp": "75",
+    "weather": "Mostly Sunny",
+    "time": "9:45 AM",
+    "hasError": false,
+    "tips": "DLT running smoothly, no stuck payments."
+  },
+  "queueSummaryData": {
+    "chartData": {
+      "colors": [
+        "#84929c",
+        "#ffda29",
+        "#ef3341"
+      ],
+      "data": [
+        425,
+        97,
+        36
+      ]
+    },
+    "total": "558",
+    "totalQueueValues": "550235.09",
+    "percentage": "+5%"
+  },
+  "tableData": [
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456789",
+      "timestamp": "12/5/2019 12:35:55",
+      "sender": {
+        "name": "Acme Bank",
+        "code": "B123456789"
+      },
+      "receiver": {
+        "name": "Elite Bank",
+        "code": "B123456799"
+      },
+      "amount": "2,025,360.45",
+      "lastUpdate": "12/5/2019 12:35:55"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456788",
+      "timestamp": "12/5/2019 12:32:38",
+      "sender": {
+        "name": "Bank of Lorem",
+        "code": "B123456788"
+      },
+      "receiver": {
+        "name": "Great Bank",
+        "code": "B123456798"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:32:38"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456789",
+      "timestamp": "12/5/2019 12:30:26",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456787"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456797"
+      },
+      "amount": "550,000.35",
+      "lastUpdate": "12/5/2019 12:30:26"
+    },
+    {
+      "type": "import",
+      "status": "Canceled",
+      "transactionID": "NC123456787",
+      "timestamp": "12/5/2019 12:25:42",
+      "sender": {
+        "name": "Elite Bank",
+        "code": "B123456786"
+      },
+      "receiver": {
+        "name": "Bank of Lorem",
+        "code": "B123456796"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:35:55"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456786",
+      "timestamp": "12/5/2019 12:22:53",
+      "sender": {
+        "name": "Acme Bank",
+        "code": "B123456785"
+      },
+      "receiver": {
+        "name": "Elite Bank",
+        "code": "B123456795"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:22:53"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456785",
+      "timestamp": "12/5/2019 12:20:53",
+      "sender": {
+        "name": "Bank of Lorem",
+        "code": "B123456784"
+      },
+      "receiver": {
+        "name": "Great Bank",
+        "code": "B123456794"
+      },
+      "amount": "550,000.35",
+      "lastUpdate": "12/5/2019 12:20:53"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456788",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456784",
+      "timestamp": "12/5/2019 12:15:35",
+      "sender": {
+        "name": "Elite Bank",
+        "code": "B123456782"
+      },
+      "receiver": {
+        "name": "Bank of Lorem",
+        "code": "B123456792"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:15:35"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456788",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "UT123456787",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456789",
+      "timestamp": "12/5/2019 12:35:55",
+      "sender": {
+        "name": "Acme Bank",
+        "code": "B123456789"
+      },
+      "receiver": {
+        "name": "Elite Bank",
+        "code": "B123456799"
+      },
+      "amount": "2,025,360.45",
+      "lastUpdate": "12/5/2019 12:35:55"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456788",
+      "timestamp": "12/5/2019 12:32:38",
+      "sender": {
+        "name": "Bank of Lorem",
+        "code": "B123456788"
+      },
+      "receiver": {
+        "name": "Great Bank",
+        "code": "B123456798"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:32:38"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456789",
+      "timestamp": "12/5/2019 12:30:26",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456787"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456797"
+      },
+      "amount": "550,000.35",
+      "lastUpdate": "12/5/2019 12:30:26"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456787",
+      "timestamp": "12/5/2019 12:25:42",
+      "sender": {
+        "name": "Elite Bank",
+        "code": "B123456786"
+      },
+      "receiver": {
+        "name": "Bank of Lorem",
+        "code": "B123456796"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:35:55"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456786",
+      "timestamp": "12/5/2019 12:22:53",
+      "sender": {
+        "name": "Acme Bank",
+        "code": "B123456785"
+      },
+      "receiver": {
+        "name": "Elite Bank",
+        "code": "B123456795"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:22:53"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456785",
+      "timestamp": "12/5/2019 12:20:53",
+      "sender": {
+        "name": "Bank of Lorem",
+        "code": "B123456784"
+      },
+      "receiver": {
+        "name": "Great Bank",
+        "code": "B123456794"
+      },
+      "amount": "550,000.35",
+      "lastUpdate": "12/5/2019 12:20:53"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456788",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456784",
+      "timestamp": "12/5/2019 12:15:35",
+      "sender": {
+        "name": "Elite Bank",
+        "code": "B123456782"
+      },
+      "receiver": {
+        "name": "Bank of Lorem",
+        "code": "B123456792"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:15:35"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456788",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "UT123456787",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456789",
+      "timestamp": "12/5/2019 12:35:55",
+      "sender": {
+        "name": "Acme Bank",
+        "code": "B123456789"
+      },
+      "receiver": {
+        "name": "Elite Bank",
+        "code": "B123456799"
+      },
+      "amount": "2,025,360.45",
+      "lastUpdate": "12/5/2019 12:35:55"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456788",
+      "timestamp": "12/5/2019 12:32:38",
+      "sender": {
+        "name": "Bank of Lorem",
+        "code": "B123456788"
+      },
+      "receiver": {
+        "name": "Great Bank",
+        "code": "B123456798"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:32:38"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456789",
+      "timestamp": "12/5/2019 12:30:26",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456787"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456797"
+      },
+      "amount": "550,000.35",
+      "lastUpdate": "12/5/2019 12:30:26"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456787",
+      "timestamp": "12/5/2019 12:25:42",
+      "sender": {
+        "name": "Elite Bank",
+        "code": "B123456786"
+      },
+      "receiver": {
+        "name": "Bank of Lorem",
+        "code": "B123456796"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:35:55"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456786",
+      "timestamp": "12/5/2019 12:22:53",
+      "sender": {
+        "name": "Acme Bank",
+        "code": "B123456785"
+      },
+      "receiver": {
+        "name": "Elite Bank",
+        "code": "B123456795"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:22:53"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456785",
+      "timestamp": "12/5/2019 12:20:53",
+      "sender": {
+        "name": "Bank of Lorem",
+        "code": "B123456784"
+      },
+      "receiver": {
+        "name": "Great Bank",
+        "code": "B123456794"
+      },
+      "amount": "550,000.35",
+      "lastUpdate": "12/5/2019 12:20:53"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456788",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "NC123456784",
+      "timestamp": "12/5/2019 12:15:35",
+      "sender": {
+        "name": "Elite Bank",
+        "code": "B123456782"
+      },
+      "receiver": {
+        "name": "Bank of Lorem",
+        "code": "B123456792"
+      },
+      "amount": "1,250,000.45",
+      "lastUpdate": "12/5/2019 12:15:35"
+    },
+    {
+      "type": "output",
+      "status": "Completed",
+      "transactionID": "UT123456788",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    },
+    {
+      "type": "import",
+      "status": "Completed",
+      "transactionID": "UT123456787",
+      "timestamp": "12/5/2019 12:18:20",
+      "sender": {
+        "name": "Great Bank",
+        "code": "B123456783"
+      },
+      "receiver": {
+        "name": "Acme Bank",
+        "code": "B123456793"
+      },
+      "amount": "900,000.00",
+      "lastUpdate": "12/5/2019 12:18:20"
+    }
+  ]
+}

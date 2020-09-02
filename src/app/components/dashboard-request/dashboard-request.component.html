@@ -1,0 +1,50 @@
+<div class="white-panel"
+  *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-change"></i>
+      <span class="txt">
+         Request
+      </span>
+    </div>
+    <div class="rights">
+      <a href="javascript:;" class="blue-link blue">View all</a>
+    </div>
+  </div>
+  <ul class="list-recent">
+    <li *ngFor="let item of dataList;let i = index">
+      <div class="lefts flex">
+        <div class="color-point"
+          [style.background-color]="item.shortNameColor">
+          {{item.shortName}}
+        </div>
+        <div class="txt-area">
+          <div class="names">{{item.bankName}}</div>
+          <div class="gray-txt">
+            {{item.type === 'Cash' ? 'Cash' : 'Token'}}
+            <i class="icons icon-right-arrow"></i>
+            {{item.type === 'Cash' ? 'Token' : 'Cash'}}
+          </div>
+        </div>
+       
+      </div>
+      <div class="rights">
+        <div class="txt-area">
+          <div class="id-txt">
+            ${{item.amount}}
+          </div>
+          <div class="color-block"
+              [class.gray]="item.status === 'Completed'"
+              [class.red]="item.status === 'Declined'"
+              [class.yellow]="item.status === 'Pending'">
+              {{item.status}}
+          </div>
+         
+        </div>
+        <i class="icons icon-vertical-elipsis"></i>
+       
+      </div>
+    </li>
+  </ul>
+</div>
+<!--end .white-panel-->

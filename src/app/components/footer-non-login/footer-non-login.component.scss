@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+.blue-footer {
+    height: 77px;
+    background-color: #034ea2;
+    padding: 0 60px;
+    .lefts-copy {
+        color: #ffffff;
+        font-family: "HelveticaNeue";
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .bottom-links {
+        display: flex;
+        li {
+            &:last-child {
+                .white-link {
+                    margin-right: 60px;
+                }
+            } 
+        }
+        .white-link {
+            margin-right: 120px;
+            color: #fff;
+            font-family: "HelveticaNeue";
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.1px;
+            line-height: 14px;
+        }
+    }
+}

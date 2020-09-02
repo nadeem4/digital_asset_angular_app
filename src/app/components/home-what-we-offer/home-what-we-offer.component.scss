@@ -1,0 +1,116 @@
+@import '../../../styles/variables';
+.max-946 {
+    max-width: 946px;
+    margin: 0 auto 0;
+    padding: 74px 0 84px;
+}
+.we-offer-content {
+    background-color: #fff;
+    .blue-title {
+        color: #034ea2;
+        font-family: "HelveticaNeue";
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: -0.17px;
+        line-height: 60px;
+        margin-bottom: 19px;
+    }
+    .txt {
+        color: #646363;
+        font-family: "HelveticaNeue";
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+.four-list {
+    flex-wrap: wrap;
+    margin-top: 48px;
+    display: flex;
+    .color-circle {
+        width: 135px;
+        height: 135px;
+        margin: 0 10px;
+        border-radius: 100%;
+        display: flex;
+        flex: 0 0 135px;
+        max-width: 135px;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 23px;
+        padding-right: 18px;
+        cursor: pointer;
+        .line-txt {
+            color: #ffffff;
+            font-family: "HelveticaNeue";
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.14px;
+            line-height: 24px;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+        .detail-txt {
+            display: none;
+            color: #ffffff;
+            font-family: "HelveticaNeue";
+            font-size: 16px;
+            letter-spacing: -0.07px;
+            line-height: 22px;
+        }
+        &:hover {
+            opacity: 1;
+        }
+        &.current {
+            padding-left: 50px;
+            padding-right: 40px;
+            flex: 0 0 350px;
+            max-width: 350px;
+            height: 350px;
+            .line-txt {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            &.green {
+                background: #a5cf4c url(/assets/i/payments-bg.svg) center bottom no-repeat;
+            }
+            &.light-blue {
+                background: #0089cf url(/assets/i/center-bank.svg) center bottom no-repeat;
+            }
+            &.blue {
+                background: #034ea2 url(/assets/i/security-bg.svg) center bottom no-repeat;
+            }
+            .detail-txt {
+                display: inline-block;
+            }
+        }
+        &.green {
+            background-color: #a5cf4c;
+            
+        }
+        &.light-blue {
+            background-color: #0089cf;
+        }
+        &.blue {
+            background-color: #034ea2;
+        }
+        &.orange {
+            background-color: #fdb913;
+            .btn-gray {
+                height: 38px;
+                border-radius: 19px;
+                background-color: #333333;
+                line-height: 38px;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: "HelveticaNeue";
+                width: 118px;
+                display: block;
+                margin: 20px auto;
+                padding: 1px 15px;
+            }
+        }
+    }
+}
+

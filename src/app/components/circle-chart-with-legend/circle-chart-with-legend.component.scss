@@ -1,0 +1,15 @@
+.chart-box-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  align-items: center;
+  &.show-botton-border {
+    border-bottom: 1px solid #eaeaea;
+  }
+  &.right-legend {
+    flex-direction: row;
+  }
+  &.bottom-legend {
+    flex-direction: column;
+  }
+}

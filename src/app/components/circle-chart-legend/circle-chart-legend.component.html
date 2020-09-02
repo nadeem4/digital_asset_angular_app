@@ -1,0 +1,28 @@
+<div class="chart-legend" #chartLegend>
+  <ng-container *ngFor="let value of values; index as i">
+    <div class="items">
+      <span class="block" [style.background-color]="colors[i]"></span>
+      <div class="txt-area" #textArea>
+        <ng-container *ngIf="!swapLabelValuePos">
+          <div class="num-txt">
+            {{value}}
+          </div>
+          <div class="label-txt">
+            {{legends[i]}}
+          </div>
+        </ng-container>
+        <ng-container *ngIf="swapLabelValuePos">
+          <div class="label-txt">
+            {{legends[i]}}
+          </div>
+          <div class="num-txt">
+            {{value}}
+          </div>
+        </ng-container>
+
+
+
+      </div>
+    </div>
+  </ng-container>
+</div>

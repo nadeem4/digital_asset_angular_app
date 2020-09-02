@@ -1,0 +1,41 @@
+.chart-legend{
+    display: flex;
+    &.column-wise {
+        flex-direction: column;
+        width: 150px;
+    }
+    &.row-wise {
+        flex-direction: row;
+        width: 100%;
+    }
+    .items {
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        
+        .block {
+            width: 8px;
+            height: 8px;
+            margin: 6px;
+            margin-right: 10px;
+        }
+        .txt-area {
+            display: flex;
+            &.label-next-to-count {
+                 flex-direction: row;
+            }
+            &.label-below-count {
+                flex-direction: column
+            }
+            .label-txt {
+                color: #646363;
+                font-size: 12px;
+            }
+            .num-txt {
+                font-size: 14px;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+        }
+    }
+}

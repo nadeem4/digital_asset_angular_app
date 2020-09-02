@@ -1,0 +1,17 @@
+<app-sd-header-non-login
+  [activeMenu]="'Central Bank Digital Currency'">
+</app-sd-header-non-login>
+
+<ng-container
+  *ngIf="data$|async">
+  <app-sd-cbdc-currency
+    [dataList]="(data$|async)?.data.currencyData">
+  </app-sd-cbdc-currency>
+
+  <app-sd-cbdc-the-features
+    [dataList]="(data$|async)?.data.featuresData">
+  </app-sd-cbdc-the-features>
+</ng-container>
+
+<app-sd-footer-non-login>
+</app-sd-footer-non-login>

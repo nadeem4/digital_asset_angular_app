@@ -1,0 +1,35 @@
+<app-sd-header-login
+  [title]="'Dashboard'"
+  [showSearch]="true">
+</app-sd-header-login>
+
+<app-sd-left-navigation
+  [activeMenu]="'Dashboard'">
+</app-sd-left-navigation>
+
+<div class="content">
+  <div class="row dashboard-page"
+    *ngIf="data$|async">
+    <div class="col col-md-3 col-sm-12">
+      <app-sd-dashboard-weather
+        [showInfo]="true"
+        [dataList]="(data$|async)?.data.weatherData">
+      </app-sd-dashboard-weather>
+
+      <app-sd-dashboard-queue-summary
+        [title]="'Payment Queue'"
+        [dataList]="(data$|async)?.data.queueSummaryData">
+      </app-sd-dashboard-queue-summary>
+    </div>
+    <div class="col col-md-9 col-sm-12">
+      <app-sd-dashboard-payment-queue-table
+        [dataList]="(data$|async)?.data.tableData"
+        [pageData]="pageData"
+        (clickRunLSM)="clickRunLSM()"
+        (changePagination)="changePagination($event)">
+      </app-sd-dashboard-payment-queue-table>
+    </div>
+    <!--end .col-->
+  </div>
+</div>
+<!-- end .content -->

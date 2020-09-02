@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+::ng-deep {
+    .tooken-txt {
+        color: #84929c;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+}
+/* fix layout issue when smaller than 992px width */
+@media (max-width: 1148px) {
+	.two-color {
+	    .color-items {
+	        margin-right: 0;
+	    }
+	}
+}

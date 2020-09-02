@@ -1,0 +1,28 @@
+<div class="white-panel" *ngIf="dataList">
+  <div class="top-bar">
+    <div class="lefts">
+      <i class="icons icon-request"></i>
+      <span class="txt">
+        Request Progress
+      </span>
+    </div>
+  </div>
+  <app-circle-chart-with-legend [label]="'completed'" [dataList]="dataList.chartData" [showLegend]="false"
+    [total]="dataList.chartData.data[0]" [totalValUnit]="'%'"></app-circle-chart-with-legend>
+
+  <!--   <div class="chart-box">
+    <div class="center-txt">
+      <span class="parent">{{dataList.chartData.data[0]}}%</span>
+      <span class="gray-txt">completed</span>
+    </div>
+    <app-sd-circle-chart
+      [dataList]="dataList.chartData">
+    </app-sd-circle-chart>
+  </div> -->
+  <!--end .chart-box-->
+  <div class="line-txt">
+    {{dataList.tips}}
+  </div>
+  <a href="javascript:;" class="btn btn-border">View details</a>
+</div>
+<!--end .white-panel-->

@@ -1,0 +1,16 @@
+<div class="two-color flex-grid">
+    <div class="color-items" #card>
+        <div class="top-title flex">
+            <i *ngIf="showIconClass" class="icons icon-cash"></i>
+            <div class="little-txt" #titleEl>
+                {{title}}
+            </div>
+        </div>
+        <div class="right-txt">
+            <div class="price-txt" #priceTextEl>
+                {{valueUnit}} {{value | number}}
+            </div>
+            <div *ngIf="tip != ''" class="gray-txt" #tipEl>{{tip}}</div>
+        </div>
+    </div>
+</div>

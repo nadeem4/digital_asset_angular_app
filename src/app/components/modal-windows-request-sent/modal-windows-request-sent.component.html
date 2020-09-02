@@ -1,0 +1,48 @@
+<div class="modal modal-default"
+  *ngIf="modalData['name'] === 'modal-windows-request-sent'">
+  <div class="modal-mains center">
+    <a href="javascript:;" class="icons btn-close"
+      (click)="closeModal()">
+    </a>
+    <div class="icons conver-img"></div>
+    <div class="green-title">
+      Conversion Request Sent
+    </div>
+    <p class="txt">
+      Your converstion request has been submitted successfuly.
+      You can track all requests on the tokenization requests page.
+    </p>
+    <div class="gray-block">
+      <div class="line-title">
+        <span class="txt">
+          {{modalData['itemData'].changeType === 'cashToken' ? 'Cash' : 'Token'}}
+        </span>
+        <i class="icons icon-right-line"></i>
+        <span class="txt">
+          {{modalData['itemData'].changeType === 'cashToken' ? 'Token' : 'Cash'}}
+        </span>
+      </div>
+      <div class="gray-body">
+        <div class="black-txt">
+          {{modalData['itemData'].changeType === 'cashToken' ? 'USD ' : ''}}
+          {{modalData['itemData'].amountValue | number}}
+          {{modalData['itemData'].changeType === 'cashToken' ? '' : ' token'}}
+        </div>
+        <div class="gray-txt">
+          {{modalData['itemData'].changeType === 'cashToken' ? 'Convert to token' : 'Convert to cash (USD)'}}
+        </div>
+        <div class="usd-txt">
+          <a href="javascript:;" class="blue-link">
+            {{modalData['itemData'].changeType === 'cashToken' ? '' : '$'}}{{modalData['itemData'].amountValue * (modalData['itemData'].changeType === 'cashToken' ? 0.1 : 10) | number}}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-btn">
+      <a [routerLink]="['/request-history-page']" class="gray-link">
+        Request History
+      </a>
+    </div>
+  </div>
+</div>
+<!--end modal-->

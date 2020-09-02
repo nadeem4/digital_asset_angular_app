@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.payment-summary-module {
+    .check-list {
+        .gray-block {
+            padding: 1px 8px;
+            display: inline-block;
+            color: #84929c;
+            font-size: 11px;
+            line-height: 14px;
+            text-transform: uppercase;
+            line-height: 15px;
+            margin: 0 5px;
+            &.current {
+                border-radius: 9px;
+                color: #0e3570;
+                background-color: rgba(132, 146, 156, 0.25);
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .payment-chart {
+        padding-left: 0;
+        padding-bottom: 0;
+        position: relative;
+    }
+}

@@ -1,0 +1,30 @@
+<ng-container
+  *ngIf="dataList">
+  <div class="top-area bg-gray">
+	  <div class="banner-img">
+		  <img src="{{dataList.photoUrl}}" alt="img" />
+	  </div>
+  	
+	  <div class="text-area center">
+		  <div class="blue-title">
+			  {{dataList.currencyTitle}}
+		  </div>
+		  <p class="txt">
+			  {{dataList.currencyDescription}}
+		  </p>
+	  </div>
+  </div>
+
+  <div class="two-pic-wrap">
+	  <div class="max-w1000">
+		  <div class="pic-flex flex-grid">
+			  <div class="imgs"
+			     *ngFor="let item of dataList.cbdcList;let i = index">
+				  <div class="gray-cover"></div>
+				  <img src="{{item.photoUrl}}" alt="img" />
+				  <span class="bottom-txt">{{item.title}}</span>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+</ng-container>

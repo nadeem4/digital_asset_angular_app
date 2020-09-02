@@ -1,0 +1,30 @@
+<div class="white-panel">
+  <div class="top-bar flex-grid">
+    <div >
+      <h4 class="modal-title">New Bank</h4>
+      <h5 class="modal-subtitle">Please complete all fields.</h5>
+    </div>
+    <div class="rights">
+      <a href="javascript:;"> <i class="icons icon-close close" (click)="activeModal.dismiss('Cross click')"></i></a>
+    </div>
+  </div>
+
+</div>
+<div class="modal-body">
+  <form class="form-inputs" [formGroup]="bankDetails">
+
+    <label for="">Bank Name</label>
+    <input type="text" formControlName="name">
+
+    <label for="">Bank ID</label>
+    <input type="text" formControlName="number">
+
+    <label for="">Description</label>
+    <input type="text" formControlName="desc">
+
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-green" (click)="activeModal.close('Close click')">Close</button>
+  <button type="button" class="btn btn-green" (click)="createNewBank()">Create New</button>
+</div>

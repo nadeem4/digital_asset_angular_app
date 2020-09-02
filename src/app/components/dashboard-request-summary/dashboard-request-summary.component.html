@@ -1,0 +1,42 @@
+<div class="white-panel small-card"
+  *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-request-summary"></i>
+      <span class="txt">
+        Requests
+      </span>
+    </div>
+  </div>
+  <div class="two-color">
+    <div class="color-items green">
+      <div class="left-txt">
+        <div class="little-txt">
+          Total value of tokenization requests
+        </div>
+        <div class="price-txt">
+          {{dataList.value }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-bordered-box-wrapper">
+    <div class="left-bordered-box green">
+      <div class="price-txt">
+        {{dataList.tokenization }}
+      </div>
+      <div class="little-txt">
+        Total number of tokenisation requests
+      </div>
+    </div>
+    <div class="left-bordered-box blue">
+      <div class="price-txt">
+        {{dataList.token }}
+      </div>
+      <div class="little-txt">
+        Total number of tokens requested 
+      </div>
+    </div>
+  </div>
+</div>
+<!--end .white-panel-->

@@ -1,0 +1,17 @@
+<div class="chart-box-wrapper show-botton-border" #chartBoxWrapper>
+    <div class="chart-box">
+        <div class="center-txt">
+            <span class="parent">{{total}}{{totalValUnit}}</span>
+            <span class="gray-txt">{{label}}</span>
+        </div>
+        <app-sd-circle-chart [dataList]="dataList">
+        </app-sd-circle-chart>
+    </div>
+    <app-circle-chart-legend *ngIf="showLegend" 
+        [columnWiseLegend]="columnWiseLegend" 
+        [rowWiseLegend]="rowWiseLegend"
+        [dataList]="dataList" 
+        [labelBelowCount]="labelBelowCount"
+        [swapLabelValuePos]="swappedLabelValuePos">
+    </app-circle-chart-legend>
+</div>

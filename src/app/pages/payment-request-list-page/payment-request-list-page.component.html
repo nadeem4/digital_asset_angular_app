@@ -1,0 +1,36 @@
+<app-sd-header-login
+  [title]="'Payment Requests'"
+  [showSearch]="false">
+</app-sd-header-login>
+
+<app-sd-left-navigation
+  [activeMenu]="'Tokenizations'">
+</app-sd-left-navigation>
+
+<div class="content">
+  <div class="trans-mains"
+    *ngIf="data$|async">
+    
+    <div class="serach-box-wrapper">
+      <app-search-box placeholder="Search Payment..."></app-search-box>
+    </div>
+    <div class="left-area">
+      <app-payment-request-table
+        [dataList]="(data$|async)?.data.tableData"
+        [pageData]="pageData"
+        (changePagination)="changePagination($event)">
+      </app-payment-request-table>
+    </div>
+    <div class="right-aside">      
+      <app-payment-request-history
+        [dataList]="(data$|async)?.data"
+        (postChange)="postChange($event)">
+      </app-payment-request-history>
+    </div>
+  </div>
+</div>
+<!-- end .content -->
+
+<app-sd-modal-windows-request-sent
+  [modalData]="modalData">
+</app-sd-modal-windows-request-sent>

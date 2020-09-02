@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.chart-main {
+    padding: 0 0 15px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    canvas {
+        // width: 550px!important;
+    }
+}

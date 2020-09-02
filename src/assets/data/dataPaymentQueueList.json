@@ -1,0 +1,300 @@
+{
+  
+    "topBarData": {
+      "allNumber": "558",
+      "tokenizationNumber": "225",
+      "deTokenizationNumber": "333",
+      "fromDate": "1/2/2019",
+      "toDate": "1/2/2020"
+    },
+    "paymentValueData": {
+      "totalValue": 2253256.09,
+      "percent": "+5% same day last year"
+    },
+    "paymentSummaryData" :{},
+    "tableData": [
+      {
+        "transactionId": "NC123456789",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Pending",
+        "priority": "High"
+      },
+      {
+        "transactionId": "NC123456789",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Pending",
+        "priority": "High"
+      }, 
+      {
+        "transactionId": "UT123456788",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Medium"
+      }, 
+      {
+        "transactionId": "UT123456788",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Medium"
+      }, 
+      {
+        "transactionId": "UT123456788",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Medium"
+      },
+      {
+        "transactionId": "NC123456789",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Pending",
+        "priority": "High"
+      }, 
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Cancelled",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Cancelled",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Cancelled",
+        "priority": "High"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Cancelled",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "UT123456788",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Medium"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      }, 
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456787",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      {
+        "transactionId": "NC123456789",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Pending",
+        "priority": "High"
+      },
+      {
+        "transactionId": "NC123456789",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Pending",
+        "priority": "High"
+      },
+      {
+        "transactionId": "NC123456789",
+        "accountNumber": "1234567890",
+        "timestamp": {"date": "1/2/2020", "time": "12:35:55"},
+        "sender":{"name": "Ashley Benson", "accNumber": "123456789"},
+        "receiver":{"name": "Emily Smith", "accNumber": "123456789"},
+        "amount": "560000",
+        "lastUpdated": {"date": "1/2/2020", "time": "12:35:55"},
+        "status": "Pending",
+        "priority": "High"
+      }
+    ],
+    "paymentSummaryChart": {
+      "total": "2250",
+      "colors": ["#ffc54e", "#ffda29", "#ef3341"],
+      "date": [425, 97, 36],
+  
+      "legends": ["In Progress", "Overdue < 24h", "Overdue > 24h"]
+    }
+  }
+  

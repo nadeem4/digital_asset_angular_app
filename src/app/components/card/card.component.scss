@@ -1,0 +1,60 @@
+.two-color {
+  flex-direction: column;
+}
+
+.color-items {
+  width: 100%;
+  margin: 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 130px;
+  &.white {
+    background-color: #fff;
+    color: black;
+  }
+  .little-txt {
+    font-size: 13px;
+    font-weight: 700;
+    &.white {
+      color: #fff;
+    }
+    &.black {
+      color: black;
+    }
+  }
+  .icon-cash {
+    background-size: 24px 17px;
+  }
+  .icon-cbdc {
+    background-size: 22px 23px;
+  }
+  .icons {
+    margin-right: 8px;
+    margin-top: 0;
+  }
+  .right-txt {
+    margin-left: 0;
+    margin-top: 30px;
+    .price-txt {
+      &.white {
+        color: #fff;
+      }
+      &.black {
+        color: black;
+      }
+    }
+    .gray-txt {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 5px;
+
+      &.warning {
+        color: #ef3341;
+      }
+      &.normal {
+        color: #ffffff;
+      }
+    }
+  }
+}

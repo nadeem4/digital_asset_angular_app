@@ -1,0 +1,115 @@
+@import '../../../styles/variables';
+
+::ng-deep {
+    .tooken-txt {
+        color: #84929c;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+}
+/* fix layout issue when smaller than 992px width */
+@media (max-width: 1148px) {
+	.two-color {
+	    .color-items {
+	        margin-right: 0;
+	    }
+	}
+}
+
+.left-bordered-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    .left-bordered-box {/* 
+        padding-left: 12px;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-top: 15px; */
+        height: 40px;
+        &.green {
+            color: #6dc24b;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 2px;
+                background-color: #6dc24b;
+            }
+        }
+        &.blue {
+            color:  #0e3570;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 2px;
+                background-color: #0e3570;
+            }
+        }
+        .price-txt {
+            font-weight: 700;
+            font-size: 24px;
+            padding: 0;
+            line-height: 28px;
+        }
+        .little-txt {
+            font-size: 12px;
+            font-weight: 400;
+            color: #84929c;
+            line-height: 18px;
+        }
+    }
+    
+
+}
+
+.left-bordered-box {
+    padding-left: 12px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 40px;
+    &.green {
+        color: #6dc24b;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #6dc24b;
+        }
+    }
+    &.blue {
+        color:  #0e3570;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #0e3570;
+        }
+    }
+    .price-txt {
+        font-weight: 700;
+        font-size: 24px;
+        padding: 0;
+        line-height: 28px;
+    }
+    .little-txt {
+        font-size: 12px;
+        font-weight: 400;
+        color: #84929c;
+        line-height: 18px;
+    }
+}
+

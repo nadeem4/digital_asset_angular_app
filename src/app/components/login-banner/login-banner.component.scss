@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+
+.login-bg {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: url("/assets/i/login-banner@2x.jpg") center top no-repeat;
+	background-size: cover;
+	.circle-blue {
+		position: absolute;
+		left: 40px;
+		top: 20px;
+		border-radius: 315px;
+		width: 315px;
+		height: 315px;
+		background-color: #0e3570;
+	    z-index: 9;
+		.mleft-45 {
+			margin-left: 45px;
+			width: auto;
+		}
+		.title {
+			color: #ffffff;
+			font-size: 44px;
+			font-weight: 700;
+			letter-spacing: -0.2px;
+			line-height: 60px;
+			width: 680px;
+			display: block;
+		}
+		.sm-title {
+			width: 350px;
+			color: #ffffff;
+			font-size: 16px;
+			letter-spacing: 0.11px;
+		}
+	}
+}

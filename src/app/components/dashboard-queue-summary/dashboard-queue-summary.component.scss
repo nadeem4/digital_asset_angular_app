@@ -1,0 +1,78 @@
+@import '../../../styles/variables';
+
+.chart-box {
+    ::ng-deep {
+        .main-area {
+            width: 130px;
+            height: 130px;
+            canvas {
+                width: 130px!important;
+                height: 130px!important;
+            }
+        }
+    }
+}
+
+.bottom-txt {
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 0 0;
+    .total-txt {
+        color: #000000;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .price-txt {
+        color: #333333;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 700;
+        .little {
+            font-size: 22px;
+        }
+    }
+    .gray-txt {
+        color: #84929c;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.three-link {
+    padding-bottom: 10px;
+    .items {
+        position: relative;
+        padding-left: 16px;
+        .block {
+            width: 8px;
+            height: 8px;
+            display: block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            border-radius: 2px;
+            &.gray {
+                background-color: #646363;
+            }
+            &.yellow {
+                background-color: #ffda29;
+            }
+            &.red {
+                background-color: #ef3341;
+            }
+            &.blue {
+                background-color:  #00a2e0;
+            }
+        }
+        .txt-area {
+            .label-txt {
+                color: #646363;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .num-txt {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}

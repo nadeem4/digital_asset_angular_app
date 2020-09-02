@@ -1,0 +1,38 @@
+<app-sd-header-login
+  [title]="'Tokenization Requests'"
+  [showSearch]="false">
+</app-sd-header-login>
+
+<app-sd-left-navigation
+  [activeMenu]="'Tokenizations'">
+</app-sd-left-navigation>
+
+<div class="content">
+  <div class="trans-mains"
+    *ngIf="data$|async">
+    <div class="left-area">
+      <app-sd-request-history-top-bar
+        [dataList]="(data$|async)?.data.topBarData"
+        (changeTabs)="changeTabs($event)"
+        (changeDates)="changeDates($event)">
+      </app-sd-request-history-top-bar>
+      
+      <app-sd-request-history-table
+        [dataList]="(data$|async)?.data.tableData"
+        [pageData]="pageData"
+        (changePagination)="changePagination($event)">
+      </app-sd-request-history-table>
+    </div>
+    <div class="right-aside">      
+      <app-sd-request-history-new-conversion
+        [dataList]="(data$|async)?.data.accountSummaryData"
+        (postChange)="postChange($event)">
+      </app-sd-request-history-new-conversion>
+    </div>
+  </div>
+</div>
+<!-- end .content -->
+
+<app-sd-modal-windows-request-sent
+  [modalData]="modalData">
+</app-sd-modal-windows-request-sent>

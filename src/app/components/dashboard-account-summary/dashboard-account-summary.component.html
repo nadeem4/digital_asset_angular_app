@@ -1,0 +1,45 @@
+<div class="white-panel account-summary-module"
+  *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-account"></i>
+      <span class="txt">
+        Account Summary
+      </span>
+    </div>
+    <div class="rights">
+      <a [routerLink]="['/request-history-page']" class="blue-link">
+        Request History
+      </a>
+    </div>
+  </div>
+  <div class="two-color flex-grid">
+    <div class="color-items blue">
+      <i class="icons icon-cash"></i>
+      <div class="right-txt">
+        <div class="price-txt">
+          ${{dataList.cashAccount | number}}
+        </div>
+        <div class="little-txt">
+          Cash Account
+        </div>
+      </div>
+    </div>
+    <div class="color-items green">
+      <i class="icons icon-cbdc"></i>
+      <div class="right-txt">
+        <div class="price-txt">
+          {{dataList.cbdcTokens | number}}
+        </div>
+        <div class="little-txt">
+          CBDC Tokens
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-sd-form-token
+    [dataList]="dataList"
+    (postChange)="postChange.emit($event)">
+  </app-sd-form-token>
+</div>
+<!--end .white-panel-->

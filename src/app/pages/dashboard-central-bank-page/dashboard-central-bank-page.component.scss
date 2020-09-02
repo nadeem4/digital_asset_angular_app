@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.content {
+	padding-bottom: 50px;
+	padding-top: 84px;
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: 1148px) {
+	
+}

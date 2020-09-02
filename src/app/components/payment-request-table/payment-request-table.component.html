@@ -1,0 +1,58 @@
+<div class="table-data tokenization-table" *ngIf="dataList">
+  <div class="row-th">
+    <div class="col-th width18">
+      <div class="spacing">Benificiary Name</div>
+    </div>
+    <div class="col-th width18">
+      <div class="spacing">Acc Number</div>
+    </div>
+    <div class="col-th width18">
+      <div class="spacing ">Request Timestamp</div>
+    </div>
+    <div class="col-th width18">
+      <div class="spacing ">Due Date</div>
+    </div>
+    <div class="col-th width18">
+      <div class="spacing ">Amount</div>
+    </div>
+    <div class="col-td width2">
+    </div>
+
+  </div>
+  <ng-container *ngFor="let item of dataList;let i = index">
+    <div class="row-td" *ngIf="i < pageData.pagePerNumber && item.benificiary">
+      <div class="col-td width18" >
+        <div class="spacing list-recent">
+          <app-entity-banner [mainText]="item.benificiary.name" [subText]="item.benificiary.email"
+            [shortName]="item.benificiary.shortName" [color]="item.benificiary.color"></app-entity-banner>
+        </div>
+      </div>
+      <div class="col-td width18 gray-txt">
+        <div class="spacing ">{{item.accountNumber}}</div>
+      </div>
+      <div class="col-td width18 gray-txt">
+        <div class="spacing ">{{item.timestamp}}</div>
+      </div>
+      <div class="col-td width18 gray-txt">
+        <div class="spacing" [ngClass]="item.overdue > 24 ? 'overdue' : ''">{{item.dueDate}}</div>
+        <div class="color-block" [class.yellow]="item.overdue === 12" [class.red]="item.overdue > 24">
+          <ng-container *ngIf="item.overdue  == 12">
+            Overdue in 12h
+          </ng-container>
+          <ng-container *ngIf="item.overdue  > 24">
+            OVERDUE
+          </ng-container>
+        </div>
+      </div>
+      <div class="col-td width18 bold">
+        <div class="spacing ">${{item.amount}}</div>
+      </div>
+      <div class="col-td width2">
+        <i class=" icons icon-elipsis"></i>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<app-sd-pagination [pageData]="pageData" (changePagination)="changePagination.emit($event)">
+</app-sd-pagination>

@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+
+//.list-recent
+.list-recent {
+    margin-top: 30px;
+    li {
+        margin-bottom: 19px;
+        display: flex;
+        justify-content: space-between;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .lefts {
+        .color-point {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            overflow: hidden;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: -0.09px;
+            text-transform: uppercase;
+            &.orange {
+                background-color: #ffc54e;
+            }
+            &.red {
+                background-color: #f15a46;
+            }
+            &.green {
+                background-color: #50c0ae;
+            }
+            &.gray {
+                background-color: #84929c;
+            }
+            &.blue {
+                background-color: #0299d6;
+            }
+        }
+        .txt-area {
+            margin-left: 16px;
+            .names {
+                color: #000000;
+                font-size: 14px;
+                letter-spacing: -0.01px;
+            }
+            .time {
+                color: #84929c;
+                font-size: 11px;
+                letter-spacing: 0.1px;
+            }
+        }
+    }
+    .rights {
+        color: #84929c;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: -0.1px;
+    }
+}

@@ -1,0 +1,47 @@
+<ng-container *ngIf="dataList">
+  <app-card title="Cash Account" valueUnit="$" [value]="dataList.cashAccount" backgroundColor="blue"></app-card>
+
+  <app-card title="CBDC Tokens"   valueUnit="" [value]="dataList.cbdcTokens" backgroundColor="green"></app-card>
+ <!--  <div class="two-color flex-grid">
+      <!-- <div class="color-items blue">
+      <div class="top-title flex">
+        <i class="icons icon-cash"></i>
+        <div class="little-txt">
+          Cash Account
+        </div>
+      </div>
+      <div class="right-txt">
+        <div class="price-txt">
+          ${{dataList.cashAccount | number}}
+        </div>
+      </div>
+    </div> -->
+  
+
+   <!--  <div class="color-items green">
+      <div class="top-title flex">
+        <i class="icons icon-cbdc"></i>
+        <div class="little-txt">
+          CBDC Tokens
+        </div>
+      </div>
+      <div class="right-txt">
+        <div class="price-txt">
+          {{dataList.cbdcTokens | number}}
+        </div>
+      </div>
+    </div> 
+  </div> -->
+
+  <div class="white-panel request-progress-module" *ngIf="dataList">
+    <div class="top-bar">
+      <div class="lefts">
+        <span class="txt">
+          New Conversion Request
+        </span>
+      </div>
+    </div>
+    <app-sd-form-token [dataList]="dataList" (postChange)="postChange.emit($event)">
+    </app-sd-form-token>
+  </div>
+</ng-container>

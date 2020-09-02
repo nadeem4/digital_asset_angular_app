@@ -1,0 +1,95 @@
+@import '../../../styles/variables';
+//.header
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100%);
+    z-index: 999;
+    background-color: #FFFFFF;
+    border: 1px solid #E8E9F1;
+    height: 86px;
+    padding: 0 30px;
+    .lefts {
+        .line {
+            width: 1px;
+            height: 60px;
+            background-color: #ececec;
+            margin-right: 19px;
+        }
+        .btn-logo {
+            &.wipro-logo {
+                img {
+                    width: 76px;
+                    height: auto;
+                    margin-right: 10px;
+                }
+            }
+            &.dig-logo {
+                img {
+                    width: 115px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .header-nav {
+        margin-left: 85px;
+        li {
+            margin-right: 56px;
+            .tab-items {
+                padding: 22px 10px;
+                width: 58px;
+                line-height: 16px;
+                color: #646363;
+                font-family: "HelveticaNeue";
+                font-size: 15px;
+                font-weight: 500;
+                overflow: hidden;
+                position: relative;
+                &.current {
+                    color: #0289cf;
+                }
+            }
+        }
+    }
+    .right-btns {
+        .btn {
+            height: 38px;
+            line-height: 38px;
+            padding: 1px 15px;
+            border-radius: 18px;
+            min-width: 100px;
+            &.btn-blue {
+                color: #ffffff;
+                font-family: "HelveticaNeue";
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                background: #0e3570;
+                margin-right: 15px;
+            }
+            &.btn-gray {
+                color: #646363;
+                font-family: "HelveticaNeue";
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                background: #f5f5f5;
+                line-height: 38px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: 1380px) {
+    .header {
+        .header-nav {
+            margin-left: 40px;
+            li {
+                margin-right: 12px;
+            }
+        }
+    } 
+}

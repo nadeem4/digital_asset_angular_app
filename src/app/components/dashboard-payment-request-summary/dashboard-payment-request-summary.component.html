@@ -1,0 +1,40 @@
+<div class="white-panel payment-summary-module"
+  *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-payment"></i>
+      <span class="txt">
+        Payment Request Summary
+      </span>
+    </div>
+    <div class="rights ">
+      <div class="check-list flex">
+        <a href="javascript:;" class="gray-block"
+          [class.current]="activePeriod === 'D'"
+          (click)="activePeriod = 'D';changePeriod.emit(activePeriod)">
+          D
+        </a>
+        <a href="javascript:;" class="gray-block"
+          [class.current]="activePeriod === 'W'"
+          (click)="activePeriod = 'W';changePeriod.emit(activePeriod)">
+          W
+        </a>
+        <a href="javascript:;" class="gray-block"
+          [class.current]="activePeriod === 'M'"
+          (click)="activePeriod = 'M';changePeriod.emit(activePeriod)">
+          M
+        </a>
+        <a href="javascript:;" class="gray-block"
+          [class.current]="activePeriod === 'Y'"
+          (click)="activePeriod = 'Y';changePeriod.emit(activePeriod)">
+          Y
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="payment-chart">
+      <app-sd-line-chart
+        [dataList]="dataList['chartData']">
+      </app-sd-line-chart>
+  </div>
+</div>

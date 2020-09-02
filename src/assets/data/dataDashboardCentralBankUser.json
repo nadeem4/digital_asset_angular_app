@@ -1,0 +1,175 @@
+{
+  "weatherData": {
+    "user": "Steve",
+    "temp": "75",
+    "weather": "Mostly Sunny"
+  },
+  "requestProgressData": {
+    "chartData": {
+      "colors": ["#cdd235", "#f2f2f2"],
+      "data": [65, 35]
+    },
+    "tips": "We notice that you get 3 pending tokenization requests. Please process it now."
+  },
+  "requestSummaryData": {
+    "value": "56,515,575",
+    "token": "1,250,560",
+    "tokenization": "22,536"
+  },
+  "requestData": [
+    {
+      "shortNameColor": "#6dc24b",
+      "shortName": "AB",
+      "bankName": "Acme Bank",
+      "amount": "23,345,123",
+      "status": "Completed",
+      "requestedEntity": "Cash"
+    },
+    {
+      "shortNameColor": "#0e3570",
+      "shortName": "BL",
+      "bankName": "Bank of lorem",
+      "amount": "23,345,123",
+      "status": "Declined",
+      "requestedEntity": "Cash"
+    },
+    {
+      "shortNameColor": "#0e3570",
+      "shortName": "EB",
+      "bankName": "Elite Bank",
+      "amount": "23,345,123",
+      "status": "Completed",
+      "requestedEntity": "Cash"
+    },
+    {
+      "shortNameColor": "#6dc24b",
+      "shortName": "GB",
+      "bankName": "Great Bank",
+      "amount": "23,345,123",
+      "status": "Pending",
+      "requestedEntity": "Token"
+    },
+    {
+      "shortNameColor": "#0e3570",
+      "shortName": "BL",
+      "bankName": "Bank of lorem",
+      "amount": "23,345,123",
+      "status": "Completed",
+      "requestedEntity": "Cash"
+    },
+    {
+      "shortNameColor": "#0e3570",
+      "shortName": "AB",
+      "bankName": "Acme Bank",
+      "amount": "23,345,123",
+      "status": "Declined",
+      "requestedEntity": "Token"
+    },
+    {
+      "shortNameColor": "#6dc24b",
+      "shortName": "GB",
+      "bankName": "Great Bank",
+      "amount": "23,345,123",
+      "status": "Completed",
+      "requestedEntity": "Cash"
+    },
+    {
+      "shortNameColor": "#6dc24b",
+      "shortName": "GB",
+      "bankName": "Great Bank",
+      "amount": "23,345,123",
+      "status": "Declined",
+      "requestedEntity": "Cash"
+    }
+  ],
+  "bankData": {
+    "summary": {
+      "total": 225,
+      "colors": ["#00a2e0", "#ffda29", "#ef3341"],
+      "data": [216, 4, 5],
+      "legends" : ["Active", "Suspended", "Removed"]
+    },
+    "list": [
+      {
+        "shortName": "AB",
+        "status": "Active",
+        "name": "Acme Bank",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "BL",
+        "status": "Active",
+        "name": "Bank of Lorem",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "EB",
+        "status": "Suspended",
+        "name": "Elite Bank",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "AB",
+        "status": "Active",
+        "name": "Great Bank",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "AB",
+        "status": "Removed",
+        "name": "Acme Bank",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "AB",
+        "status": "Suspended",
+        "name": "Acme Bank",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "AB",
+        "status": "Active",
+        "name": "Acme Bank",
+        "number": "B1234CR56"
+      },
+      {
+        "shortName": "AB",
+        "status": "Active",
+        "name": "Acme Bank",
+        "number": "B1234CR56"
+      }
+    ]
+  },
+  "paymentRequestSummaryData": {
+    "chartData": [
+      {
+        "month": "Jun 2019",
+        "percentage": "8000"
+      },
+      {
+        "month": "Jul 2019",
+        "percentage": "11000"
+      },
+      {
+        "month": "Aug 2019",
+        "percentage": "15000"
+      },
+      {
+        "month": "Sep 2019",
+        "percentage": "12000"
+      },
+      {
+        "month": "Oct 2019",
+        "percentage": "21000"
+      },
+      {
+        "month": "Nov 2019",
+        "percentage": "22000"
+      },
+      {
+        "month": "Dec 2019",
+        "percentage": "29000"
+      }
+    ]
+  }
+}

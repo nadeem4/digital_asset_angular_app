@@ -1,0 +1,23 @@
+<ng-container *ngIf="dataList">
+    <app-card title="Total Request Values" valueUnit="$" [value]="dataList.requestSummaryData.totalRequestValues"
+        backgroundColor="blue" [tip]="dataList.requestSummaryData.percent" [showIconClass]="showIconClass"></app-card>
+
+    <app-card title="Total Request" valueUnit="" [value]="dataList.requestSummaryData.totalRequest" [tip]="dataList.requestSummaryData.tip"
+        backgroundColor="white" tipType="warning" [showIconClass]="showIconClass">
+    </app-card>
+
+    <div class="white-panel request-progress-module" *ngIf="dataList">
+        <div class="top-bar">
+            <div class="lefts">
+                <span class="txt">
+                    Summary
+                </span>
+            </div>
+        </div>
+        <app-circle-chart-with-legend [label]="'requests'" [dataList]="dataList.requestSummaryChart"
+            [total]="dataList.requestSummaryChart.total" [rowWiseLegend]="rowWiseLegendForDonought"
+            [columnWiseLegend]="columnWiseLegendForDonought" [showLegendOnBottom]="bottomLegendForDonought"
+            [showLegendOnRight]="rightLegendForDonought" disableBottomBorder='true' [labelBelowCount]="lableBelowCount">
+        </app-circle-chart-with-legend>
+    </div>
+</ng-container>

@@ -1,0 +1,225 @@
+{
+  "topBarData": {
+    "allNumber": "558",
+    "tokenizationNumber": "225",
+    "deTokenizationNumber": "333",
+    "fromDate": "1/2/2019",
+    "toDate": "1/2/2020"
+  },
+  "accountSummaryData": {
+    "cashAccount": 2050245.36,
+    "cbdcTokens": 1250560
+  },
+  "tableData": [
+    {
+      "requestID": "T123456789",
+      "type": "cashToken",
+      "timestamp": "1/2/2020 12:35:55",
+      "amount": "560000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "T123456788",
+      "type": "cashToken",
+      "timestamp": "1/2/2020 9:20:25",
+      "amount": "125000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "D123456789",
+      "type": "tokenCash",
+      "timestamp": "1/2/2020 8:20:35",
+      "amount": "550000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "T123456787",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:25:42",
+      "amount": "900000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "D123456786",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:22:53",
+      "amount": "125000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "D123456785",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:20:53",
+      "amount": "550000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "T123456788",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:18:20",
+      "amount": "900000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "D123456784",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "D123456783",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "D123456782",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "T123456789",
+      "type": "cashToken",
+      "timestamp": "1/2/2020 12:35:55",
+      "amount": "560000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "T123456788",
+      "type": "cashToken",
+      "timestamp": "1/2/2020 9:20:25",
+      "amount": "125000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "D123456789",
+      "type": "tokenCash",
+      "timestamp": "1/2/2020 8:20:35",
+      "amount": "550000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "T123456787",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:25:42",
+      "amount": "900000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "D123456786",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:22:53",
+      "amount": "125000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "D123456785",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:20:53",
+      "amount": "550000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "T123456788",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:18:20",
+      "amount": "900000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "D123456784",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "D123456783",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "D123456782",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "T123456789",
+      "type": "cashToken",
+      "timestamp": "1/2/2020 12:35:55",
+      "amount": "560000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "T123456788",
+      "type": "cashToken",
+      "timestamp": "1/2/2020 9:20:25",
+      "amount": "125000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "D123456789",
+      "type": "tokenCash",
+      "timestamp": "1/2/2020 8:20:35",
+      "amount": "550000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "T123456787",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:25:42",
+      "amount": "900000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "D123456786",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:22:53",
+      "amount": "125000",
+      "status": "Pending"
+    },
+    {
+      "requestID": "D123456785",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:20:53",
+      "amount": "550000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "T123456788",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:18:20",
+      "amount": "900000",
+      "status": "Approved"
+    },
+    {
+      "requestID": "D123456784",
+      "type": "cashToken",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "D123456783",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    },
+    {
+      "requestID": "D123456782",
+      "type": "tokenCash",
+      "timestamp": "12/5/2019  12:15:35",
+      "amount": "125000",
+      "status": "Declined"
+    }
+  ]
+}

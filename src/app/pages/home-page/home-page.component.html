@@ -1,0 +1,17 @@
+<app-sd-header-non-login
+  [activeMenu]="''">
+</app-sd-header-non-login>
+
+<ng-container
+  *ngIf="data$|async">
+  <app-sd-home-banner
+    [dataList]="(data$|async)?.data">
+  </app-sd-home-banner>
+
+  <app-sd-home-what-we-offer
+    [dataList]="(data$|async)?.data">
+  </app-sd-home-what-we-offer>
+</ng-container>
+
+<app-sd-footer-non-login>
+</app-sd-footer-non-login>

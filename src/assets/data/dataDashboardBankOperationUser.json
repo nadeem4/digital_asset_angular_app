@@ -1,0 +1,245 @@
+{
+    "weatherData": {
+      "user": "Nicole",
+      "temp": "75",
+      "weather": "Mostly Sunny"
+    },
+    "requestProgressData": {
+      "chartData": {
+        "colors": [
+          "#cdd235",
+          "#f2f2f2"
+        ],
+        "data": [
+          65,
+          35
+        ]
+      },
+      "tips": "We notice that 3 payment requests will be overdue in 12h. Please assign someone to complete it as soon as possbile."
+    },
+    "recentRequestData": [
+      {
+        "shortNameColor": "#ffc54e",
+        "shortName": "ES",
+        "name": "Emmily Smith",
+        "time": "2h ago",
+        "price": "125.00"
+      },
+      {
+        "shortNameColor": "#f15a46",
+        "shortName": "AP",
+        "name": "Acme Project",
+        "time": "15h ago",
+        "price": "1,500.00"
+      },
+      {
+        "shortNameColor": "#50c0ae",
+        "shortName": "TS",
+        "name": "Lorem Purchase",
+        "time": "2d ago",
+        "price": "350.00"
+      },
+      {
+        "shortNameColor": "#84929c",
+        "shortName": "AB",
+        "name": "Conseqtetur",
+        "time": "3d ago",
+        "price": "150.00"
+      },
+      {
+        "shortNameColor": "#0299d6",
+        "shortName": "AB",
+        "name": "Elite Project",
+        "time": "5d ago",
+        "price": "175.00"
+      },
+      {
+        "shortNameColor": "#ffc54e",
+        "shortName": "ES",
+        "name": "Emmily Smith",
+        "time": "2h ago",
+        "price": "125.00"
+      },
+      {
+        "shortNameColor": "#f15a46",
+        "shortName": "AP",
+        "name": "Acme Project",
+        "time": "15h ago",
+        "price": "1,250.00"
+      },
+      {
+        "shortNameColor": "#50c0ae",
+        "shortName": "TS",
+        "name": "Lorem Purchase",
+        "time": "2d ago",
+        "price": "550.00"
+      }
+    ],
+    "accountSummaryData": {
+      "cashAccount": 2050245.36,
+      "cbdcTokens": 1250560
+    },
+    "recentJournalEntriesData": {
+      "tableData": [
+        {
+          "date": "2.1.2020",
+          "description": "Cash Account",
+          "debit": "$2,050,245",
+          "credit": ""
+        },
+        {
+          "date": "",
+          "description": "CBDC Tokens",
+          "debit": "",
+          "credit": "205,024"
+        },
+        {
+          "date": "21.12.2019",
+          "description": "CBDC Tokens",
+          "debit": "25,000",
+          "credit": ""
+        },
+        {
+          "date": "",
+          "description": "Cash Account",
+          "debit": "",
+          "credit": "$250,000"
+        },
+        {
+          "date": "18.12.2019",
+          "description": "CBDC Tokens",
+          "debit": "12,500",
+          "credit": ""
+        },
+        {
+          "date": "",
+          "description": "Cash Account",
+          "debit": "",
+          "credit": "$125,000"
+        }
+      ]
+    },
+    "paymentRequestSummaryData": {
+      "chartData": [
+        {
+          "month": "Jun 2019",
+          "percentage": "8000"
+        },
+        {
+          "month": "Jul 2019",
+          "percentage": "11000"
+        },
+        {
+          "month": "Aug 2019",
+          "percentage": "15000"
+        },
+        {
+          "month": "Sep 2019",
+          "percentage": "12000"
+        },
+        {
+          "month": "Oct 2019",
+          "percentage": "21000"
+        },
+        {
+          "month": "Nov 2019",
+          "percentage": "22000"
+        },
+        {
+          "month": "Dec 2019",
+          "percentage": "29000"
+        }
+      ]
+    },
+    "queueSummary": {
+      "chartData": {
+        "colors": [
+          "#84929c",
+          "#ffda29",
+          "#ef3341"
+        ],
+        "data": [
+          425,
+          97,
+          36
+        ],
+      
+        "legends" : ["Completed", "Pending", "Canceled"]
+      },
+      "total": "558",
+      "totalQueueValues": "550235.09",
+      "percentage": "+5%"
+    },
+    "paymentsData": [
+      {
+        "type": "import",
+        "status": "Pending",
+        "transactionID": "NC123456789",
+        "amount": "2,500.00",
+        "priority": "High"
+      },
+      {
+        "type": "import",
+        "status": "Completed",
+        "transactionID": "NC123456788",
+        "amount": "1,250.45",
+        "priority": "High"
+      },
+      {
+        "type": "output",
+        "status": "Completed",
+        "transactionID": "UT123456789",
+        "amount": "550.35",
+        "priority": "High"
+      },
+      {
+        "type": "import",
+        "status": "Canceled",
+        "transactionID": "NC123456787",
+        "amount": "900.00",
+        "priority": "High"
+      },
+      {
+        "type": "import",
+        "status": "Completed",
+        "transactionID": "NC123456786",
+        "amount": "1,250.45",
+        "priority": "Medium"
+      },
+      {
+        "type": "import",
+        "status": "Pending",
+        "transactionID": "NC123456785",
+        "amount": "550.35",
+        "priority": "Medium"
+      },
+      {
+        "type": "output",
+        "status": "Pending",
+        "transactionID": "UT123456788",
+        "amount": "900.00",
+        "priority": "Medium"
+      },
+      {
+        "type": "import",
+        "status": "Completed",
+        "transactionID": "NC123456784",
+        "amount": "1,250.45",
+        "priority": "Low"
+      },
+      {
+        "type": "import",
+        "status": "Pending",
+        "transactionID": "NC123456789",
+        "amount": "2,500.00",
+        "priority": "High"
+      },
+      {
+        "type": "import",
+        "status": "Completed",
+        "transactionID": "NC123456788",
+        "amount": "1,250.45",
+        "priority": "High"
+      }
+    ]
+  }

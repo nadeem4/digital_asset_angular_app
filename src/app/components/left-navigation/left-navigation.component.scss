@@ -1,0 +1,191 @@
+@import '../../../styles/variables';
+.open-wrap.open-left {
+    .left-nav {
+        width: 225px;
+    }
+    .top-menu {
+        .open-show {
+            display: flex;
+            padding: 0 18px;
+            justify-content: space-between;
+            .lefts {
+                display: block;
+                img {
+                    width: 94px;
+                    height: 24px;
+                }
+            }
+            .icon-back {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url(/assets/i/icon-white-back.svg) center center no-repeat;
+                background-size: 6px 11px;
+                margin-top: -3px;
+            }
+        }
+        .icon-menu {
+            display: none;
+        }
+    }
+    .add-wrap {
+        display: block;
+        padding: 0 0 17px;
+        .green-btn {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 41px;
+            border-radius: 100%;
+            background-color: #6dc24b;
+            display: block;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    
+    .tab-links {
+        padding: 0 8px;
+        text-align: left;
+        .icons {
+            width: 100%;
+            min-width: 100%;
+            background-position: 13px center;
+            padding-left: 51px;
+            &.current {
+                background-position: 13px center;
+                .detail-txt {
+                    font-weight: 700;
+                    color: #0e3570;
+                }
+                &.icon-dashboard,
+                &.icon-change,
+                &.icon-back-time,
+                &.icon-payment,
+                &.icon-queues, 
+                &.icon-question {
+                    background-position: 13px center;
+                }
+            }
+        }
+    }
+    .detail-txt {
+        display: inline-block;
+        color: #fff;
+        line-height: 42px;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 13px;
+    }
+    .bottom-setting {
+        .icon-setting {
+            background: url(/assets/i/icon-setting.svg) center center no-repeat;
+            background-size: 21px 21px;
+        }
+        .detail-txt {
+            padding-left: 31px;
+            line-height: 22px;
+        }
+    }
+}
+//.left-nav
+.left-nav {
+    width: 65px;
+    background-color: #0e3570;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    .top-menu {
+        padding: 20px 5px 24px;
+        .icon-back,
+        .lefts {
+            display: none;
+        }
+        .icons {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .detail-txt,
+    .add-wrap {
+         display: none;   
+    }
+    .icon-menu {
+        display: inline-block;
+        background: url(/assets/i/icon-menu.svg) center center no-repeat;
+        background-size: 18px 12px;
+    }
+    .tab-links {
+        .icons {
+            border-radius: 2px;
+            width: 50px;
+            height: 42px;
+            margin-bottom: 10px;
+            &.current {
+                &.icon-dashboard {
+                    background: #ffda29 url(/assets/i/icon-dashboard.svg) center center no-repeat;
+                    background-size: 24px 20px;
+                }
+                &.icon-change {
+                    background: #ffda29 url(/assets/i/icon-change.svg) center center no-repeat;
+                    background-size: 24px 20px;
+                }
+                &.icon-back-time {
+                    background: #ffda29 url(/assets/i/icon-back-time.svg) center center no-repeat;
+                    background-size: 24px 20px;
+                }
+                &.icon-question {
+                    background: #ffda29 url(/assets/i/icon-question.svg) center center no-repeat;
+                    background-size: 24px 20px;
+                }
+            }
+        }
+        .icon-dashboard {
+            background: transparent url(/assets/i/icon-dashboard-white.svg) center center no-repeat;
+            background-size: 24px 20px;
+        }
+        .icon-change {
+            background: transparent url(/assets/i/icon-change-white.svg) center center no-repeat;
+            background-size: 20px 20px;
+        }
+        .icon-back-time {
+            background: transparent url(/assets/i/icon-back-time-white.svg) center center no-repeat;
+            background-size: 24px 24px;
+        }
+        .icon-payment {
+            background: transparent url(/assets/i/icon-payment-white.svg) center center no-repeat;
+            background-size: 24px 24px;
+            margin-left: 5px;
+        }
+        .icon-queues {
+            background: transparent url(/assets/i/icon-queues-white.svg) center center no-repeat;
+            background-size: 24px 24px;
+            margin-left: 5px;
+        }
+        .icon-question {
+            background: transparent url(/assets/i/icon-question-white.svg) center center no-repeat;
+            background-size: 24px 24px;
+        }
+        .icon-payment-queues {
+            background: transparent url(/assets/i/icon-queue-monitoring-white.svg) center center no-repeat;
+            background-size: 48px 48px;
+             margin-left: 5px;
+        }
+    }
+    .bottom-setting {
+        position: absolute;
+        bottom: 20px;
+        left: 23px;
+        .icon-setting {
+            background: url(/assets/i/icon-setting.svg) center center no-repeat;
+            background-size: 21px 21px;
+            width: 21px;
+            height: 21px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+
+.inputs {
+    
+    border: 0;
+    border-radius: 4px;
+    background: #ffffff;
+    height: 34px;
+    width: 100%;
+    color: #909090;
+    &.icon-inputs {
+        padding-left: 34px;
+    }
+    .icon-search {
+        background: url(/assets/i/icon-search.svg) center 11px no-repeat;
+        background-size: 14px 14px;
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

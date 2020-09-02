@@ -1,0 +1,32 @@
+[
+  {
+    "username": "Mark",
+    "email": "bank-treasury@wipro.com",
+    "password": "pass",
+    "role": "Bank Treasury User"
+  },
+  {
+    "username": "Bill",
+    "email": "central-bank-operations@wipro.com",
+    "password": "pass",
+    "role": "Central Bank Operations User"
+  },
+  {
+    "username": "Steve",
+    "email": "central-bank-user@wipro.com",
+    "password": "pass",
+    "role": "Central Bank User"
+  },
+  {
+    "username": "Anthony",
+    "email": "central-bank-customer@wipro.com",
+    "password": "pass",
+    "role": "Central Bank Customer"
+  },
+  {
+    "username": "Nicole",
+    "email": "bank-operations-user@wipro.com",
+    "password": "pass",
+    "role": "Bank Operations User"
+  }
+]

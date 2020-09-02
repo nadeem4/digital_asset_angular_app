@@ -1,0 +1,62 @@
+<header class="header flex-grid"
+  [class.white-bg]="!showSearch">
+  <div class="lefts flex">
+    <div class="logo-area ">
+      <a href="javascript:;" class="btn-logo flex">
+        <img src="/assets/i/icon-dashboard.svg" alt="img" />
+        <span class="txt">{{title}}</span>
+      </a>
+    </div>
+  </div>
+  <div class="center-search flex"
+    *ngIf="showSearch">
+    <div class="inputs icon-inputs">
+      <a href="javascript:;" class="icons icon-search"></a>
+      <input type="text" placeholder="Quick search..."/>
+    </div>
+    <!--end .inputs-->
+  </div>
+  <!--end .center-search-->
+  <div class="right-users flex">
+    <div class="btn-list flex">
+      <a href="javascript:;" class="icons btn-search"></a>
+      <!--open-->
+    </div>
+    <!--end .btn-list-->
+    <div class="user-module">
+      <div class="right-txt">
+        <div class="wel-txt">
+          Welcome,
+        </div>
+        <a href="javascript:;" class="names blue-link">
+          {{username}}
+        </a>
+      </div>
+      <a href="javascript:;" class="left-img">
+        <img src="/assets/i/user-01@2x.png" alt="photo" />
+      </a>
+      <span class="line"></span>
+    </div>
+    <div class="tip-module ">
+      <a href="javascript:;" class="icon-bell">
+        <i class="icons red-point"></i>
+      </a>
+      <div class="tip-panel">
+        <ul>
+          <li>
+            <a href="javascript:;" class="tab-items active">123</a>
+          </li>
+          <li>
+            <a href="javascript:;" class="tab-items">123</a>
+          </li>
+          <li>
+            <a href="javascript:;" class="tab-items">123</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--tip-module-->
+  </div>
+  <!--end .right-users-->
+</header>
+<!-- end .header -->

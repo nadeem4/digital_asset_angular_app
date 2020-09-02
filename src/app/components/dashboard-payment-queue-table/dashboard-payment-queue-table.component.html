@@ -1,0 +1,150 @@
+<div class="white-panel payment-queue-module"
+  *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-payments"></i>
+      <span class="txt">
+        Payment Queue
+      </span>
+    </div>
+    <div class="rights">
+      <a href="javascript:;" class="icons icon-search">
+        Search
+      </a>
+      <a href="javascript:;" class="btn btn-green"
+        [class.disabled]="runLSMClicked"
+        (click)="runLSMClicked = true;clickRunLSM.emit()">
+        <span class="icons icon-run">Run LSM</span>
+        <span class="icons right-trans"></span>
+      </a>
+    </div>
+  </div>
+  <div class="table-data payment-queues-table">
+    <div class="row-th">
+      <div class="col-th width30">
+        <div class="spacing"></div>
+      </div>
+      <div class="col-th width11">
+        <div class="spacing">Transaction ID</div>
+      </div>
+      <div class="col-th width17">
+        <div class="spacing">Timestamp</div>
+      </div>
+      <div class="col-th width14">
+        <div class="spacing">Sender</div>
+      </div>
+      <div class="col-th width16">
+        <div class="spacing">Receiver</div>
+      </div>
+      <div class="col-th width18">
+        <div class="spacing">Amount</div>
+      </div>
+      <div class="col-th width11">
+        <div class="spacing">Last Update</div>
+      </div>
+      <div class="col-th width50">
+        <div class="spacing"></div>
+      </div>
+    </div>
+    <div class="table-body">
+      <ng-container
+        *ngFor="let item of dataList;let i = index">
+        <div class="row-td"
+          *ngIf="i < pageData.pagePerNumber">
+          <div class="col-td width30">
+            <div class="spacing center">
+              <i class="icons icon-gray"
+                [class.right-top]="item.type === 'output'">
+              </i>
+            </div>
+          </div>
+           <div class="col-td width11">
+             <div class="spacing">
+               <div class="color-block"
+                 [class.gray]="item.status === 'In Progress'"
+                 [class.red]="item.status === 'Canceled'"
+                 [class.green]="item.status === 'Completed'"
+                 [class.yellow]="item.status === 'Pending'">
+                 {{item.status}}
+               </div>
+               <div class="id-txt">
+                 {{item.transactionID}}
+               </div>
+             </div>
+           </div>
+           <div class="col-td width17">
+             <div class="spacing gray-txt big">
+               {{item.timestamp}}
+             </div>
+           </div>
+           <div class="col-td width14">
+             <div class="spacing"
+               *ngIf="item.sender">
+               <div class="black-txt">
+                 {{item.sender.name}}
+               </div>
+               <div class="gray-txt">
+                 {{item.sender.code}}
+               </div>
+             </div>
+           </div>
+           <div class="col-td width16">
+             <div class="spacing"
+               *ngIf="item.receiver">
+               <div class="black-txt">
+                 {{item.receiver.name}}
+               </div>
+               <div class="gray-txt">
+                 {{item.receiver.code}}
+               </div>
+             </div>
+           </div>
+           <div class="col-td width18">
+             <div class="spacing">
+               <div class="black-txt">
+                 {{item.amount}}
+               </div>
+             </div>
+           </div>
+           <div class="col-td width11">
+             <div class="spacing"
+               *ngIf="item.lastUpdate">
+               <div class="gray-txt">
+                 {{item.lastUpdate.split(' ')[0]}}
+               </div>
+               <div class="gray-txt">
+                 {{item.lastUpdate.split(' ')[1]}}
+               </div>
+             </div>
+           </div>
+           <div class="col-td width50">
+             <div class="spacing center">
+               <div class="more-module">
+                 <a href="javascript:;" class="btn btn-more"></a>
+                 <div class="drop-panel">
+                   <a href="javascript:;" class="btn-link">
+                     <i class="icons icon-edit"></i>
+                     <span class="txt">Edit Request</span>
+                   </a>
+                   <a href="javascript:;" class="btn-link">
+                     <i class="icons icon-cancel"></i>
+                     <span class="txt red">Cancel request</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <!--end .table-data-->  
+  <div class="table-bottom">
+    <app-sd-pagination
+      [pageData]="pageData"
+      (changePagination)="changePagination.emit($event)">
+    </app-sd-pagination>
+  </div>
+  <!--end .table-bottom-->
+</div>
+<!--end .white-panel-->

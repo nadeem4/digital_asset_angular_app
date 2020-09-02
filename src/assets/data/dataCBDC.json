@@ -1,0 +1,26 @@
+{
+  "currencyData": {
+    "photoUrl": "assets/i/show-computer@2x.png",
+    "currencyTitle": "Central Bank Digital Currency",
+    "currencyDescription": "The demand for a ubiquitous money has forced central banks to think of a money revolution; and today, this revolution is being powered by distributed ledger technology. More and more central banks and monetary authorities are coming forward to explore wholesale and retail CBDC.",
+    "cbdcList": [
+      {
+        "title": "Wholesale CBDC",
+        "photoUrl": "assets/i/currency-img01@2x.jpg"
+      },
+      {
+        "title": "Retail CBDC",
+        "photoUrl": "assets/i/currency-img02@2x.jpg"
+      }
+    ]
+  },
+  "featuresData": {
+    "featuresTitle": "The Features",
+    "cashTitle": "Tokenize/De-tokenize Cash",
+    "cashDescription": "Conversion of cash in RTGS account to cash tokens, which the banks can use to settle transactions in the decentralized RTGS with counterparty banks and the Central Bank.",
+    "smartTitle": "Smart Alerts & Suggesstions",
+    "smartDescription": "It's a cognitive feature that provide information, alerts and suggestions about what the next actions the user should take.",
+    "monitorTitle": "Monitor Payment Queues",
+    "monitorDescription": "You don't need to go to the queue page to see their priorities. You can monitor the payment queues on the dashboard page."
+  }
+}

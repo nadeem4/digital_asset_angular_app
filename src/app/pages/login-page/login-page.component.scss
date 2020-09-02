@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.login-pages {
+	height: 100%;
+}
+.bg-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+app-sd-login-form {
+    flex: 0 0 410px;
+    max-width: 410px;
+}
+.flex-box {
+	display: flex;
+	.w-1175 {
+		width: calc(100% - 410px);
+		position: relative;
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,49 @@
+<div class="white-panel" *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-bank"></i>
+      <span class="txt">
+        Banks
+      </span>
+    </div>
+    <div class="rights">
+      <a (click)="addNewBank(content)" class="blue-link blue" href="javascript:;">
+        <i class="icons icon-add-more"></i>
+        <span>Add New Bank</span> </a>
+    </div>
+  </div>
+
+
+  <app-circle-chart-with-legend [label]="'Banks'" [dataList]="dataList.summary" [total]="dataList.summary.total"
+  columnWiseLegend='true'   showLegendOnRight='true'></app-circle-chart-with-legend>
+
+  <ul class="list-recent">
+    <li *ngFor="let item of dataList.list;let i = index">
+      <div class="lefts flex">
+        <div class="color-point" style="background-color: #84929c">
+          {{item.shortName}}
+        </div>
+        <div class="txt-area">
+          <div class="names">{{item.name}}</div>
+          <div class="gray-txt" style="font-size: 12px; font-weight: 400;">
+            {{item.number}}
+          </div>
+        </div>
+      </div>
+      <div class="rights">
+        <div class="txt-area">
+          <div class="color-block" [class.blue]="item.status === 'Active'" [class.red]="item.status === 'Removed'"
+            [class.yellow]="item.status === 'Suspended'">
+            {{item.status}}
+          </div>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+  <div class="bottom-txt">
+    <span>
+      View all banks</span>
+  </div>
+</div>
+<!--end .white-panel-->

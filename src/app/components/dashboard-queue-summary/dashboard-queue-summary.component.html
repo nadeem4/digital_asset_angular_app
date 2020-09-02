@@ -1,0 +1,74 @@
+<div class="white-panel queue-module" *ngIf="dataList">
+  <div class="top-bar flex-grid">
+    <div class="lefts">
+      <i class="icons icon-queue"></i>
+      <span class="txt">
+        Queue Summary
+      </span>
+    </div>
+  </div>
+  <app-circle-chart-with-legend 
+    [label]="'requests'"
+    [dataList]="dataList.chartData" 
+    [total]="dataList.total"
+    [rowWiseLegend]="rowWiseLegendForDonought" 
+    [columnWiseLegend]="columnWiseLegendForDonought"
+    [showLegendOnBottom]="bottomLegendForDonought" 
+    [showLegendOnRight]="rightLegendForDonought"
+    disableBottomBorder='true'>
+  </app-circle-chart-with-legend>
+
+  <!-- <div class="chart-box">
+    <div class="center-txt">
+      <span class="parent">{{dataList.total}}</span>
+      <span class="gray-txt">requests</span>
+    </div>
+    <app-sd-circle-chart
+      [dataList]="dataList.chartData">
+    </app-sd-circle-chart>
+  </div>
+  <div class="three-link flex-grid">
+    <div class="items">
+      <span class="block gray"></span>
+      <div class="txt-area">
+        <div class="label-txt">
+          Completed
+        </div>
+        <div class="num-txt">
+          {{dataList.chartData.data[0]}}
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <span class="block yellow"></span>
+      <div class="txt-area">
+        <div class="label-txt">
+          Pending
+        </div>
+        <div class="label-txt">
+          {{dataList.chartData.data[1]}}
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <span class="block red"></span>
+      <div class="txt-area">
+        <div class="label-txt">
+          Canceled
+        </div>
+        <div class="label-txt">
+          {{dataList.chartData.data[2]}}
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="bottom-txt">
+    <div class="total-txt">
+      Total queue values
+    </div>
+    <div class="price-txt">
+      ${{dataList.totalQueueValues | number}}
+    </div>
+    <div class="gray-txt">{{dataList.percentage}} same day last year</div>
+  </div>
+</div>
